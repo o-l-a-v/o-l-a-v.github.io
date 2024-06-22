@@ -1,0 +1,16 @@
+azure:
+  label: Azure
+  permalink: /azure
+  description: Content related to Azure
+docusaurus:
+  label: Docusaurus
+  permalink: /docusaurus
+  description: Content related to Docusaurus
+hello:
+  label: Hello
+  permalink: /hello
+  description: Hello tag description
+powershell:
+  label: PowerShell
+  permalink: /powershell
+  description: Content related to PowerShell

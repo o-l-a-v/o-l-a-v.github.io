@@ -1,2 +1,5 @@
-# o-l-a-v.github.io
-Home page built using Docusaurus.
+# Readme
+
+## About
+
+Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docusaurus](https://docusaurus.io/), hosted by [GitHub Pages](https://pages.github.com/).
