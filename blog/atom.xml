@@ -12,9 +12,9 @@
         <id>https://olavrb.no/blog/hello-world</id>
         <link href="https://olavrb.no/blog/hello-world"/>
         <updated>2024-06-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[About]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_T2uo" id="about">About<a class="hash-link" aria-label="Direct link to About" title="Direct link to About" href="https://olavrb.no/blog/hello-world#about">​</a></h2>
-<p>Testing Docusaurus.</p>]]></content>
+        <summary type="html"><![CDATA[Hello world]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_T2uo" id="hello-world">Hello world<a class="hash-link" aria-label="Direct link to Hello world" title="Direct link to Hello world" href="https://olavrb.no/blog/hello-world#hello-world">​</a></h2>
+<p>I'll write more about how and why this web page came to life here. Now I have to make dinner.</p>]]></content>
         <author>
             <name>Olav</name>
             <uri>https://github.com/o-l-a-v</uri>
