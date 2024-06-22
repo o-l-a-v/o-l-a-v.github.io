@@ -7,6 +7,6 @@ tags:
   - hello
 ---
 
-## About
+## Hello world
 
-Testing Docusaurus.
+I'll write more about how and why this web page came to life here. Now I have to make dinner.
