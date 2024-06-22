@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
@@ -16,9 +18,10 @@ const config: Config = {
   projectName: 'o-l-a-v.github.io', // Usually your repo name.
   trailingSlash: false,
 
-  // What to do when broken links are detected
+  // Behavior
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  onDuplicateRoutes: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you

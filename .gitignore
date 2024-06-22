@@ -7,7 +7,9 @@
 # Generated files
 .docusaurus
 .cache-loader
-.yarn/*
+.pnp.*
+.yarn
+
 
 # Misc
 .DS_Store
@@ -15,6 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.pnp.*
 
 # Logs
 npm-debug.log*
