@@ -10,7 +10,6 @@
 .pnp.*
 .yarn
 
-
 # Misc
 .DS_Store
 .env.local
