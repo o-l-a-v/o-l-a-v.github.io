@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://o-l-a-v.github.io/blog/</id>
+    <id>https://o-l-a-v.github.io/blog</id>
     <title>OlavDocs Blog</title>
     <updated>2024-06-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://o-l-a-v.github.io/blog/"/>
+    <link rel="alternate" href="https://o-l-a-v.github.io/blog"/>
     <subtitle>OlavDocs Blog</subtitle>
     <icon>https://o-l-a-v.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Hello world]]></title>
-        <id>https://o-l-a-v.github.io/blog/hello-world/</id>
-        <link href="https://o-l-a-v.github.io/blog/hello-world/"/>
+        <id>https://o-l-a-v.github.io/blog/hello-world</id>
+        <link href="https://o-l-a-v.github.io/blog/hello-world"/>
         <updated>2024-06-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[About]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_TR_3" id="about">About<a class="hash-link" aria-label="Direct link to About" title="Direct link to About" href="https://o-l-a-v.github.io/blog/hello-world/#about">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_TR_3" id="about">About<a class="hash-link" aria-label="Direct link to About" title="Direct link to About" href="https://o-l-a-v.github.io/blog/hello-world#about">​</a></h2>
 <p>Testing Docusaurus.</p>]]></content>
         <author>
             <name>Olav</name>
