@@ -11,7 +11,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  url: 'https://o-l-a-v.github.io', // Set the production url of your site here
+  url: 'https://olavrb.no', // Set the production url of your site here
   baseUrl: '/', // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   deploymentBranch: 'gh-pages',
   organizationName: 'o-l-a-v', // Usually your GitHub org/user name.
