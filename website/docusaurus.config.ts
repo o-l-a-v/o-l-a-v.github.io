@@ -19,6 +19,7 @@ const config: Config = {
   trailingSlash: false,
 
   // Behavior
+  onBrokenAnchors: 'throw',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
