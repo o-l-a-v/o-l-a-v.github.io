@@ -1,5 +1,8 @@
 ---
-title: Google Nest Wifi - Power adapter specifications
+title: Power adapter specifications
+keywords:
+  - google wifi
+  - nest wifi
 ---
 
 :::info
