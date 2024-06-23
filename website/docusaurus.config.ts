@@ -19,8 +19,8 @@ const config: Config = {
   trailingSlash: false,
 
   // Behavior
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
