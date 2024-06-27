@@ -43,8 +43,9 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // routeBasePath: '/',
-          editUrl:
-            'https://github.com/o-l-a-v/docs/tree/main/docs/docs',
+          editUrl: 'https://github.com/o-l-a-v/docs/tree/main/docs/docs',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true
         },
         blog: {
           showReadingTime: true,
