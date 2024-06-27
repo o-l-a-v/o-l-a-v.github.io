@@ -40,19 +40,11 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // routeBasePath: '/',
-          editUrl: 'https://github.com/o-l-a-v/docs/tree/main/docs/docs',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/o-l-a-v/docs/tree/main/docs/blog',
+          showReadingTime: false,
         },
         theme: {
           customCss: './src/css/custom.css',
