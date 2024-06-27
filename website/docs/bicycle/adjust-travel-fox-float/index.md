@@ -51,13 +51,19 @@ The fork can be lowered from the given max travel on the fork, and theoreticly d
 If you want to lower it 20mm, you just use one 20mm spacer.
 If you want your fork 20mm higher, you just take out one 20mm spacer
 
-Example pictures taken from Fox Tech Center
-[L=https://i.imgur.com/xcbzuAi.png]Fox 32[/L] - [L=https://i.imgur.com/Vi6369e.png]Fox 36 160mm[/L] - [L=https://i.imgur.com/3xT5H77.png]Fox 36 180mm[/L]
+Example pictures taken from Fox Tech Center.
 
-### "I need help for a different Fox fork"
+|What|Picture
+|:--|:--
+|Fox 32 |![fox-32](https://i.imgur.com/xcbzuAi.png)
+|Fox 36 160mm |![fox-36-160mm](https://i.imgur.com/Vi6369e.png)
+|Fox 36 180mm |![fox-36-180mm](https://i.imgur.com/3xT5H77.png)
+
+### I need help with a different Fox fork
 
 Fox has made a whole lot of information available for us customers. You can get it all here:
-[L=https://www.ridefox.com/help.php?m=bike&t=manuals&ref=lnav_help]Fox Tech Center: Bike[/L]
+
+* <https://www.ridefox.com/fox17/help.php?m=bike&t=manuals&ref=lnav_help>
 
 ## Requirements
 
@@ -227,9 +233,13 @@ When everything is tight, get some air in that fork
 
 ![add-air](https://i.imgur.com/Pvf7tVi.jpg)
 
-### 20. CONGRATS! You are finished
+### 20. CONGRATS! You're almost finished
 
 ![finished](https://i.imgur.com/p1f5exb.jpg)
+
+### 21. Reassemble your bike
+
+Step [1 Remove fork from the bicycle](#1-remove-fork-from-the-bicycle) in reverse.
 
 ## Resources
 
