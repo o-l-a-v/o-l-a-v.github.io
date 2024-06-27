@@ -75,7 +75,8 @@ const config: Config = {
         {
           to: '/blog',
           label: 'Blog',
-          position: 'left'},
+          position: 'left'
+        },
         {
           href: 'https://github.com/o-l-a-v/o-l-a-v.github.io',
           position: 'right',
