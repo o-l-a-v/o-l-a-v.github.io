@@ -14,4 +14,4 @@ My two main interests are tech and bicycles, so that's what you'll find content 
 
 ## About me
 
-I'm a tech and bicycle nerd living in Oslo, Norway ![flag-no](/img/flag-no.svg). I've worked primarily with Azure ![azure](/img/azure.svg), PowerShell ![pwsh](/img/pwsh.svg) and Intune ![intune](/img/intune.svg) as a consultant since 2018.
+I'm a tech and bicycle ~~enthusiast~~ nerd living in Oslo, Norway ![flag-no](/img/flag-no.svg). I've worked primarily with Azure ![azure](/img/azure.svg), PowerShell ![pwsh](/img/pwsh.svg) and Intune ![intune](/img/intune.svg) as a consultant since 2018.
