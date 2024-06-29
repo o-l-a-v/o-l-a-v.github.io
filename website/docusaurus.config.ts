@@ -31,7 +31,7 @@ const config: Config = {
   },
 
   markdown: {
-    format: 'md'
+    format: 'detect'
   },
 
   presets: [
