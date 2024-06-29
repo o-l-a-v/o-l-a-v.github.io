@@ -12,3 +12,4 @@
 ## Content
 
 * [ ] Create or find different favicon.
+* [ ] Guide and list of resources used for making this Docusaurus page.
