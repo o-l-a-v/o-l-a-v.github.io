@@ -63,7 +63,7 @@ const config: Config = {
       title: 'Home',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo-docusaurus.svg',
+        src: 'https://github.com/o-l-a-v.png',
       },
       items: [
         {
