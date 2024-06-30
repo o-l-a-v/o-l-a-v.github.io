@@ -1,0 +1,5 @@
+Contact: https://docs.github.com/en/code-security/security-advisories/guidance-on-reporting-and-writing-information-about-vulnerabilities/privately-reporting-a-security-vulnerability
+Expires: 2025-06-30T21:59:00.000Z
+Preferred-Languages: en, nb, nn
+Canonical: https://olavrb.no
+Policy: https://github.com/o-l-a-v/o-l-a-v.github.io/blob/main/SECURITY.md
