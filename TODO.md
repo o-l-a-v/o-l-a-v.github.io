@@ -8,6 +8,7 @@
 * [ ] Landing page: Add feeds of 5 newest doc and blog posts.
 * [x] Create `robots.txt`.
 * [ ] Look into ability to set security related headers like CSP (content security policy).
+* [ ] Dependabot for automagic dependency updates.
 
 ## Content
 
