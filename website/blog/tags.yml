@@ -6,6 +6,10 @@ bicycle:
   label: Bicycle
   permalink: /bicycle
   description: Content related to bicycles
+changelog:
+  label: Changelog
+  permalink: /changelog
+  description: Posts about larger changes to the web site
 docusaurus:
   label: Docusaurus
   permalink: /docusaurus

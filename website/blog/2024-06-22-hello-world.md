@@ -17,3 +17,5 @@ I created this web page with the following goals:
   * Easily exportable, if other output formats is neccessary in the future.
 * To make content and information that might not be easily available in other places. And make this content easily discoverable too.
 * To make myself create even better notes and guides (not only intended for my own consumption).
+
+<!-- truncate -->
