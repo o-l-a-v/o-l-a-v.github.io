@@ -2,6 +2,10 @@ azure:
   label: Azure
   permalink: /azure
   description: Content related to Azure
+bicycle:
+  label: Bicycle
+  permalink: /bicycle
+  description: Content related to bicycles
 docusaurus:
   label: Docusaurus
   permalink: /docusaurus
@@ -10,6 +14,10 @@ hello:
   label: Hello
   permalink: /hello
   description: Hello tag description
+rant:
+  label: Shortcomings
+  permalink: /shortcomings
+  description: Shortcomings
 powershell:
   label: PowerShell
   permalink: /powershell
