@@ -11,6 +11,13 @@ Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docus
 Upgrade packages and dependencies using Yarn. Try to run locally _and_ build before pushing the changes.
 
 ```bash
+# Navigate to website folder
+cd website
+
+# Update package manager with Corepack
+corepack up
+
+# Update Node packages with Yarn
 yarn upgrade-interactive
 ```
 
@@ -25,6 +32,9 @@ yarn install
 
 # Run
 yarn start
+
+# Build, also to check for broken anchors and links
+yarn build
 ```
 
 ### Deploy to GitHub pages from local
@@ -35,6 +45,5 @@ git clean --force -d -x
 yarn install
 
 # Deploy
-$env:GIT_USER = [string] 'o-l-a-v'
-yarn deploy
+$env:GIT_USER = [string] 'o-l-a-v'; yarn deploy
 ```
