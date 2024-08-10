@@ -1,5 +1,7 @@
 olav:
   name: Olav
-  title: Repo owner
-  url: https://github.com/o-l-a-v
+  title: Site owner
   image_url: https://github.com/o-l-a-v.png
+  socials:
+    github: https://github.com/o-l-a-v
+    linkedin: https://www.linkedin.com/in/olavrb/
