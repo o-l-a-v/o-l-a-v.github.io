@@ -19,15 +19,15 @@ Here is what I got so far.
 
 ## Table
 
-|Model |A.K.A |Voltage |Amperage |Wattage |Plug type |Plug outer |Plug inner |Plug length |Polarization center
-|:--              |:--                         |:-- |:--   |:--   |:--    |:--   |:--    |:--    |:--
-|Google Wifi 2016 |NLS-1304-25, A4RNLS-1304-25 |5v  |3.0A  |15W   |USB-C  |-     |-      |-      |-
-|Google Wifi 2017 |AC-1304, A4RAC-1304         |5v  |3.0A  |15W   |USB-C  |-     |-      |-      |-
-|Google Wifi 2020 |GJ2CQ                       |14v |1.1A  |15.4W |Barrel |      |       |       |
-|Nest Wifi Router |H2D, A4R-H2D                |14v |1.1A  |15.4W |Barrel |3.5mm |1.35mm |10.0mm |Positive
-|Nest Wifi Point  |H2E, A4R-H2E                |14v |1.1A  |15.4W |Barrel |3.5mm |1.35mm |10.0mm |Positive
-|Nest Wifi Pro    |G6ZUC, A4R-G6ZUC            |10v |2.25A |22.5W |Barrel |5.5mm |2.10mm |12.9mm |Positive
-|?                |GS4VD, BRZA                 |    |      |      |       |      |       |       |
+| Model            | A.K.A                       | Voltage | Amperage | Wattage | Plug type | Plug outer | Plug inner | Plug length | Polarization center |
+| :--------------- | :-------------------------- | :------ | :------- | :------ | :-------- | :--------- | :--------- | :---------- | :------------------ |
+| Google Wifi 2016 | NLS-1304-25, A4RNLS-1304-25 | 5v      | 3.0A     | 15W     | USB-C     | -          | -          | -           | -                   |
+| Google Wifi 2017 | AC-1304, A4RAC-1304         | 5v      | 3.0A     | 15W     | USB-C     | -          | -          | -           | -                   |
+| Google Wifi 2020 | GJ2CQ                       | 14v     | 1.1A     | 15.4W   | Barrel    |            |            |             |                     |
+| Nest Wifi Router | H2D, A4R-H2D                | 14v     | 1.1A     | 15.4W   | Barrel    | 3.5mm      | 1.35mm     | 10.0mm      | Positive            |
+| Nest Wifi Point  | H2E, A4R-H2E                | 14v     | 1.1A     | 15.4W   | Barrel    | 3.5mm      | 1.35mm     | 10.0mm      | Positive            |
+| Nest Wifi Pro    | G6ZUC, A4R-G6ZUC            | 10v     | 2.25A    | 22.5W   | Barrel    | 5.5mm      | 2.10mm     | 12.9mm      | Positive            |
+| ?                | GS4VD, BRZA                 |         |          |         |           |            |            |             |                     |
 
 ## Power adapter model numbers
 
