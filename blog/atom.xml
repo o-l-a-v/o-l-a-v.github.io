@@ -9,15 +9,26 @@
     <icon>https://olavrb.no/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Hello world]]></title>
-        <id>https://olavrb.no/blog/hello-world</id>
-        <link href="https://olavrb.no/blog/hello-world"/>
+        <id>https://olavrb.no/blog/2024/06/22/hello-world</id>
+        <link href="https://olavrb.no/blog/2024/06/22/hello-world"/>
         <updated>2024-06-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hello world]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hello-world">Hello world<a class="hash-link" aria-label="Direct link to Hello world" title="Direct link to Hello world" href="https://olavrb.no/blog/hello-world#hello-world">​</a></h2>
-<p>I'll write more about how and why this web page came to life here. Now I have to make dinner.</p>]]></content>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="hello-world">Hello world<a href="https://olavrb.no/blog/2024/06/22/hello-world#hello-world" class="hash-link" aria-label="Direct link to Hello world" title="Direct link to Hello world">​</a></h2>
+<p>I created this web page with the following goals:</p>
+<ul>
+<li>To learn more about SSGs (<strong>s</strong>tatic <strong>s</strong>ite <strong>g</strong>enerators) and GitHub pages (host static web pages).</li>
+<li>To have a permanent place to store content, instead of forums that come and go.
+<ul>
+<li>Universal, easily reusable format.</li>
+<li>Stable format (markdown), requires less maintenance and adaptation.</li>
+<li>Easily exportable, if other output formats is neccessary in the future.</li>
+</ul>
+</li>
+<li>To make content and information that might not be easily available in other places. And make this content easily discoverable too.</li>
+<li>To make myself create even better notes and guides (not only intended for my own consumption).</li>
+</ul>]]></content>
         <author>
             <name>Olav</name>
-            <uri>https://github.com/o-l-a-v</uri>
         </author>
         <category label="Docusaurus" term="Docusaurus"/>
         <category label="Hello" term="Hello"/>
