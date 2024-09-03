@@ -14,11 +14,21 @@ Upgrade packages and dependencies using Yarn. Try to run locally _and_ build bef
 # Navigate to website folder
 cd website
 
+# Update NodeJS with fnm
+fnm install --lts --corepack-enabled
+fnm default <new_version>
+fnm use <new_version>
+fnm list
+fnm uninstall <old_version(s)>
+
 # Update package manager with Corepack
 corepack up
 
 # Update Node packages with Yarn
 yarn upgrade-interactive
+
+# Deduplicate
+yarn dedupe --check
 ```
 
 ### Run locally
@@ -45,5 +55,5 @@ git clean --force -d -x
 yarn install
 
 # Deploy
-$env:GIT_USER = [string] 'o-l-a-v'; yarn deploy
+yarn docusaurus clear; $env:GIT_USER = [string] 'o-l-a-v'; yarn deploy
 ```
