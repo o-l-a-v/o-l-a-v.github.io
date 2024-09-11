@@ -3439,13 +3439,13 @@ __metadata:
   linkType: hard
 
 "algoliasearch-helper@npm:^3.13.3":
-  version: 3.22.4
-  resolution: "algoliasearch-helper@npm:3.22.4"
+  version: 3.22.5
+  resolution: "algoliasearch-helper@npm:3.22.5"
   dependencies:
     "@algolia/events": "npm:^4.0.1"
   peerDependencies:
     algoliasearch: ">= 3.1 < 6"
-  checksum: 10c0/84108699d89c5cd8a2017c52b13704403797e02389678d8bc2a489da46886365acd95aef0bc87642cb9c84f974bd0ac25b74cdecfc3cca3041afdfa07f78821f
+  checksum: 10c0/ac23bf64e8ae4f1388c121cb23ec0d2e2a996e77493a7da8141338e6b60be565c9085363ac7d0277469645474ce61c8a06ecbb6e4f0462736b79f3b1b54031b2
   languageName: node
   linkType: hard
 
@@ -5022,9 +5022,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.4":
-  version: 1.5.18
-  resolution: "electron-to-chromium@npm:1.5.18"
-  checksum: 10c0/2c553c4e7618e887398af0fb7ddd8055beb69d37a810ad73fcea0f3e9027f1fc879ef280151fb6bae8e5b961f5597452eafc1ae5a0adca5bd49211545a34afe7
+  version: 1.5.19
+  resolution: "electron-to-chromium@npm:1.5.19"
+  checksum: 10c0/73e25a928e041d707565fb08371b6ba5f3d7d99c78adddfd553660f28809ca22f1608ff295da3c764903a8eae890cbdd701b1b64b3e1eaeb298cb8aecbf21937
   languageName: node
   linkType: hard
 
@@ -8866,11 +8866,11 @@ __metadata:
   linkType: hard
 
 "path-to-regexp@npm:^1.7.0":
-  version: 1.8.0
-  resolution: "path-to-regexp@npm:1.8.0"
+  version: 1.9.0
+  resolution: "path-to-regexp@npm:1.9.0"
   dependencies:
     isarray: "npm:0.0.1"
-  checksum: 10c0/7b25d6f27a8de03f49406d16195450f5ced694398adea1510b0f949d9660600d1769c5c6c83668583b7e6b503f3caf1ede8ffc08135dbe3e982f034f356fbb5c
+  checksum: 10c0/de9ddb01b84d9c2c8e2bed18630d8d039e2d6f60a6538595750fa08c7a6482512257464c8da50616f266ab2cdd2428387e85f3b089e4c3f25d0c537e898a0751
   languageName: node
   linkType: hard
 
