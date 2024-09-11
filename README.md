@@ -24,8 +24,11 @@ fnm uninstall <old_version(s)>
 # Update package manager with Corepack
 corepack up
 
-# Update Node packages with Yarn
+# Update Node packages in packages.json
 yarn upgrade-interactive
+
+# Update all Node packages, not only those in packages.json, but those only in yarn.lock too
+yarn up --recursive '*'
 
 # Deduplicate
 yarn dedupe --check
