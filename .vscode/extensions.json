@@ -1,7 +1,8 @@
 {
   "recommendations": [
     "DavidAnson.vscode-markdownlint",
-    "yzhang.markdown-all-in-one",
-    "Jota0222.multi-formatter"
+    "EditorConfig.EditorConfig",
+    "Jota0222.multi-formatter",
+    "yzhang.markdown-all-in-one"
   ]
 }
