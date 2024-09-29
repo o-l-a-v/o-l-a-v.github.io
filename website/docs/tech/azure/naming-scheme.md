@@ -16,11 +16,11 @@ In this doc I try to suggest alterations to the Microsoft CAF naming scheme it f
 
 Throughout this doc I'll use following terms in the following way:
 
-|Word|Meaning
-|:--|:--
-|Scheme     |Agreed and documented strategy and practices when it comes to how to name Azure resources.
-|Convention |Interchangable with "scheme", but I'll try to write "scheme" only.
-|Prefix     |Pattern of the name: Components and the order of those.
+| Word       | Meaning                                                                                    |
+| :--------- | :----------------------------------------------------------------------------------------- |
+| Scheme     | Agreed and documented strategy and practices when it comes to how to name Azure resources. |
+| Convention | Interchangable with "scheme", but I'll try to write "scheme" only.                         |
+| Prefix     | Pattern of the name: Components and the order of those.                                    |
 
 ## Why have a naming scheme?
 
@@ -79,14 +79,14 @@ Abbreviations that are missing in the [Microsoft CAF abbreviation list](https://
 
 * Some of these resources can't actually be named in the Azure portal, but the abbreviation can still be used for documentation, diagrams and similar.
 
-|Provider and resource |Human friendly name |Suggested abbreviation |Note
-|:--|:--|:--|:--
-|`Microsoft.Insights/activityLogAlerts`      |Activity log alerts      |alar |
-|`Microsoft.Insights/metricAlerts`           |Metric alerts            |mar  |
-|`Microsoft.OperationsManagement/solutions`  |Sentinel                 |sent |Can't name this resource, but useful for diagrams. Sentinel inherits the name of the Log Analytics Workspace it's tied to.
-|`Microsoft.OperationsManagement/solutions`  |Update Management        |aaum |Can't name this resource, but useful for diagrams.
-|?                                           |Update Management Center |umc  |Does not seem one creates these as an Azure resource?
-|`Microsoft.Web`?                            |On-premises Data Gateway |odgw |Does not seem one creates these as an Azure resource?
+| Provider and resource                      | Human friendly name      | Suggested abbreviation | Note                                                                                                                       |
+| :----------------------------------------- | :----------------------- | :--------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| `Microsoft.Insights/activityLogAlerts`     | Activity log alerts      | alar                   |                                                                                                                            |
+| `Microsoft.Insights/metricAlerts`          | Metric alerts            | mar                    |                                                                                                                            |
+| `Microsoft.OperationsManagement/solutions` | Sentinel                 | sent                   | Can't name this resource, but useful for diagrams. Sentinel inherits the name of the Log Analytics Workspace it's tied to. |
+| `Microsoft.OperationsManagement/solutions` | Update Management        | aaum                   | Can't name this resource, but useful for diagrams.                                                                         |
+| ?                                          | Update Management Center | umc                    | Does not seem one creates these as an Azure resource?                                                                      |
+| `Microsoft.Web`?                           | On-premises Data Gateway | odgw                   | Does not seem one creates these as an Azure resource?                                                                      |
 
 ## Microsoft CAF naming scheme alterations
 
@@ -110,27 +110,27 @@ Abbreviations that are missing in the [Microsoft CAF abbreviation list](https://
 
 Three characters for every environment.
 
-|Microsoft naming convention |3ch |2ch
-|:--|:--|:--
-|dev      |dev |dv
-|platform |plf |pf
-|preprod  |ppd |pp
-|prod     |prd |pd
-|stage    |stg |st
-|test     |tst |ts
+| Microsoft naming convention | 3ch  | 2ch  |
+| :-------------------------- | :--- | :--- |
+| dev                         | dev  | dv   |
+| platform                    | plf  | pf   |
+| preprod                     | ppd  | pp   |
+| prod                        | prd  | pd   |
+| stage                       | stg  | st   |
+| test                        | tst  | ts   |
 
 ### Instance
 
 Cut a leading zero: How likely are we to reach more than 99 (01-99) instances?
 
-|Microsoft naming convention |Altered
-|:--|:--
-|001 |01
-|002 |02
-|... |..
-|055 |55
-|... |..
-|099 |99
+| Microsoft naming convention | Altered |
+| :-------------------------- | :------ |
+| 001                         | 01      |
+| 002                         | 02      |
+| ...                         | ..      |
+| 055                         | 55      |
+| ...                         | ..      |
+| 099                         | 99      |
 
 ### Region
 
@@ -161,46 +161,46 @@ Microsoft suggested abbreviation for region is problematic, because:
 
 ##### Continents
 
-|Continent |2ch
-|:--|:--
-|Antartica     |an
-|Africa        |af
-|Asia          |as
-|Europe        |eu
-|North America |na
-|Oceania       |oc
-|South America |sa
+| Continent     | 2ch  |
+| :------------ | :--- |
+| Antartica     | an   |
+| Africa        | af   |
+| Asia          | as   |
+| Europe        | eu   |
+| North America | na   |
+| Oceania       | oc   |
+| South America | sa   |
 
 ##### Cardinal directions
 
-|Direction |2ch |1ch
-|:--|:--|:--
-|Central |ce |c
-|East    |ea |e
-|North   |no |n
-|South   |so |s
-|West    |we |w
+| Direction | 2ch  | 1ch  |
+| :-------- | :--- | :--- |
+| Central   | ce   | c    |
+| East      | ea   | e    |
+| North     | no   | n    |
+| South     | so   | s    |
+| West      | we   | w    |
 
 #### Azure regions
 
 ##### Europe
 
-|Region name |4ch by Azure region name |6ch `<continent:2\|country:2\|cardinal_direction:2>` | 3ch `<country:2\|cardinal_direction:1>`
-|:--|:--|:--|:--
-|Global                  |glob |global |glo
-|France Central          |frce |eufrce |frc
-|France South            |frso |eufrso |frs
-|Germany North           |geno |eudeno |den
-|Germany West Central    |gewc |eudewe |dew
-|North Europe (Dublin)   |noeu |euieea |iee
-|Norway East             |noea |eunoea |noe
-|Norway West             |nowe |eunowe |now
-|Sweden Central          |swce |eusece |sec
-|Switzerland North       |swno |euchno |chn
-|Switzerland West        |swwe |euchwe |chw
-|UK South                |ukso |eugbso |gbs
-|UK West                 |ukwe |eugbwe |gbw
-|West Europe (Amsterdam) |weeu |eunlwe |nlw
+| Region name             | 4ch by Azure region name | 6ch `<continent:2\|country:2\|cardinal_direction:2>` | 3ch `<country:2\|cardinal_direction:1>` |
+| :---------------------- | :----------------------- | :--------------------------------------------------- | :-------------------------------------- |
+| Global                  | glob                     | global                                               | glo                                     |
+| France Central          | frce                     | eufrce                                               | frc                                     |
+| France South            | frso                     | eufrso                                               | frs                                     |
+| Germany North           | geno                     | eudeno                                               | den                                     |
+| Germany West Central    | gewc                     | eudewe                                               | dew                                     |
+| North Europe (Dublin)   | noeu                     | euieea                                               | iee                                     |
+| Norway East             | noea                     | eunoea                                               | noe                                     |
+| Norway West             | nowe                     | eunowe                                               | now                                     |
+| Sweden Central          | swce                     | eusece                                               | sec                                     |
+| Switzerland North       | swno                     | euchno                                               | chn                                     |
+| Switzerland West        | swwe                     | euchwe                                               | chw                                     |
+| UK South                | ukso                     | eugbso                                               | gbs                                     |
+| UK West                 | ukwe                     | eugbwe                                               | gbw                                     |
+| West Europe (Amsterdam) | weeu                     | eunlwe                                               | nlw                                     |
 
 ### Special cases - Specific Azure resource types
 

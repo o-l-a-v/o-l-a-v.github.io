@@ -53,11 +53,11 @@ If you want your fork 20mm higher, you just take out one 20mm spacer
 
 Example pictures taken from Fox Tech Center.
 
-|What|Picture
-|:--|:--
-|Fox 32 |![fox-32](https://i.imgur.com/xcbzuAi.png)
-|Fox 36 160mm |![fox-36-160mm](https://i.imgur.com/Vi6369e.png)
-|Fox 36 180mm |![fox-36-180mm](https://i.imgur.com/3xT5H77.png)
+| What         | Picture                                          |
+| :----------- | :----------------------------------------------- |
+| Fox 32       | ![fox-32](https://i.imgur.com/xcbzuAi.png)       |
+| Fox 36 160mm | ![fox-36-160mm](https://i.imgur.com/Vi6369e.png) |
+| Fox 36 180mm | ![fox-36-180mm](https://i.imgur.com/3xT5H77.png) |
 
 ### I need help with a different Fox fork
 

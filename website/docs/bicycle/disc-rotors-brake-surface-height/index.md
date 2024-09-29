@@ -34,19 +34,19 @@ Shimano is kind enough (/s) to not say anything about what measurements "wide" a
 
 I then started the jurney to find this information myself. Then realised NO ONE lists this info on their web pages. I've reached out to Bracko, Hope (answered me fast, said they'd add info), Jagwire, KCNC, TRP and XLC, tro try to complete this table.
 
-|Brand|Variation|Brake surface height|Found out how|
-|:-|:-|:-|:-|
-|Brakco||?||
-|Clarks||?||
-|Hope||15.0mm|Hope answered my email.|
-|Jagwire||?||
-|KCNC||?||
-|Shimano|Narrow|14.4mm|Measured G05S-RX brake pads.|
-|Shimano|Wide|16.0mm|Measured B05S brake pads.|
-|Sram||15.5mm?|Sram Paceline has this according to [r2-bike.com](https://r2-bike.com/SRAM-Brake-Disc-Paceline-Rounded-Edges-160-mm-6-Bolt).|
-|Tektro||?||
-|TRP||?||
-|XLC||?||
+| Brand   | Variation | Brake surface height | Found out how                                                                                                                |
+| :------ | :-------- | :------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| Brakco  |           | ?                    |                                                                                                                              |
+| Clarks  |           | ?                    |                                                                                                                              |
+| Hope    |           | 15.0mm               | Hope answered my email.                                                                                                      |
+| Jagwire |           | ?                    |                                                                                                                              |
+| KCNC    |           | ?                    |                                                                                                                              |
+| Shimano | Narrow    | 14.4mm               | Measured G05S-RX brake pads.                                                                                                 |
+| Shimano | Wide      | 16.0mm               | Measured B05S brake pads.                                                                                                    |
+| Sram    |           | 15.5mm?              | Sram Paceline has this according to [r2-bike.com](https://r2-bike.com/SRAM-Brake-Disc-Paceline-Rounded-Edges-160-mm-6-Bolt). |
+| Tektro  |           | ?                    |                                                                                                                              |
+| TRP     |           | ?                    |                                                                                                                              |
+| XLC     |           | ?                    |                                                                                                                              |
 
 ## Ending words
 
