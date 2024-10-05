@@ -2,7 +2,7 @@
 
 ## About
 
-Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docusaurus](https://docusaurus.io/), hosted by [GitHub Pages](https://pages.github.com/).
+Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docusaurus](https://docusaurus.io/), hosted in [GitHub Pages](https://pages.github.com/).
 
 ## Project help
 
@@ -11,7 +11,7 @@ Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docus
 Upgrade packages and dependencies using Yarn. Try to run locally _and_ build before pushing the changes.
 
 ```bash
-# Navigate to website folder
+# Navigate to the website folder
 cd website
 
 # Update NodeJS with fnm
@@ -27,7 +27,7 @@ corepack up
 # Update Node packages in packages.json
 yarn upgrade-interactive
 
-# Update all Node packages, not only those in packages.json, but those only in yarn.lock too
+# Update all Node packages, not only those in packages.json, but those in yarn.lock too
 yarn up --recursive '*'
 
 # Deduplicate
