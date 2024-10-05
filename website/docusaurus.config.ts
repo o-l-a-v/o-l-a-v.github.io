@@ -61,11 +61,7 @@ const config: Config = {
       defaultMode: 'dark'
     },
     navbar: {
-      title: 'Home',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'https://github.com/o-l-a-v.png',
-      },
+      title: '🏠',
       items: [
         {
           type: 'docSidebar',
