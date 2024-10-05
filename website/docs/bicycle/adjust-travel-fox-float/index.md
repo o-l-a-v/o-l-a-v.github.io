@@ -63,7 +63,7 @@ Example pictures taken from Fox Tech Center.
 
 Fox has made a whole lot of information available for us customers. You can get it all here:
 
-* <https://www.ridefox.com/fox17/help.php?m=bike&t=manuals&ref=lnav_help>
+* <https://tech.ridefox.com/?m=bike&ref=lnav_help&t=manuals>
 
 ## Requirements
 
