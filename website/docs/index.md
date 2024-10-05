@@ -1,5 +1,5 @@
 ---
-title: Olav's home page
+title: Olav's homepage
 hide_table_of_contents: true
 pagination_label: Home
 sidebar_label: Home
