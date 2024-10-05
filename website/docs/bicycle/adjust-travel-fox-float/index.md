@@ -67,7 +67,7 @@ Fox has made a whole lot of information available for us customers. You can get 
 
 ## Requirements
 
-Stuff you will need:
+Stuff you'll need:
 
 ![requirements](https://i.imgur.com/FVGg2Kz.jpg)
 
