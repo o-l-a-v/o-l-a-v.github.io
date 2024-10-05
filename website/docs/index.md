@@ -1,5 +1,6 @@
 ---
 title: Olav's home page
+hide_table_of_contents: true
 pagination_label: Home
 sidebar_label: Home
 sidebar_position: 0
