@@ -32,6 +32,14 @@ yarn up --recursive '*'
 
 # Deduplicate
 yarn dedupe --check
+
+# Update vulnearble package
+## Regular update first
+yarn upgrade-interactive
+## If that did not help - Find out what uses it
+yarn why '<package_name>'
+## Upgrade packages using it, if update is available. Check npmjs.com.
+yarn up --recursive '<package_name>'
 ```
 
 ### Run locally
