@@ -28,7 +28,7 @@
     "typescript": "^5.6.3"
   },
   "engines": {
-    "node": ">=20 <21",
+    "node": ">=22 <23",
     "npm": "use-yarn",
     "pnpm": "use-yarn",
     "yarn": ">=4 <5"
