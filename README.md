@@ -52,9 +52,15 @@ git clean --force -d -x
 yarn install
 
 # Run
+## Using NodeJS since 22
+node --run start
+## Using Yarn
 yarn start
 
 # Build, also to check for broken anchors and links
+## Using NodeJS since 22
+node --run build
+## Using Yarn
 yarn build
 ```
 
@@ -66,5 +72,8 @@ git clean --force -d -x
 yarn install
 
 # Deploy
+## Using NodeJS since 22
+node --run clear; $env:GIT_USER = [string] 'o-l-a-v'; node --run deploy
+## Using Yarn
 yarn docusaurus clear; $env:GIT_USER = [string] 'o-l-a-v'; yarn deploy
 ```
