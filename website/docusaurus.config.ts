@@ -30,6 +30,11 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // Use Docusaurus Faster with Rspack etc.
+  future: {
+    experimental_faster: true
+  },
+
   markdown: {
     format: 'detect'
   },
