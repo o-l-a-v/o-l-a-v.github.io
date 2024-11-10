@@ -77,3 +77,15 @@ node --run clear; $env:GIT_USER = [string] 'o-l-a-v'; node --run deploy
 ## Using Yarn
 yarn docusaurus clear; $env:GIT_USER = [string] 'o-l-a-v'; yarn deploy
 ```
+
+## Other learnings
+
+### One don't need `devDependencies` for building
+
+One could probably save some seconds in a CI/CD pipeline if only installing the NPM packages needed for building.
+
+With Yarn one could do: `yarn workspaces focus --all --production` instead of `yarn install`.
+
+### Where is the Yarn global cache location on Windows?
+
+`%LOCALAPPDATA%\Yarn\Berry\cache`
