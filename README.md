@@ -56,12 +56,19 @@ yarn install
 node --run start
 ## Using Yarn
 yarn start
+```
 
-# Build, also to check for broken anchors and links
+### Build locally
+
+```powershell
+# Build, will also to check for broken anchors and links vs. running it locally
 ## Using NodeJS since 22
 node --run build
 ## Using Yarn
 yarn build
+
+# Build clean and time how long it took
+node --run clear; $Stopwatch = [System.Diagnostics.Stopwatch]::StartNew(); node --run build; $Stopwatch.Stop(); $Stopwatch.Elapsed.ToString()
 ```
 
 ### Deploy to GitHub pages from local
