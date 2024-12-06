@@ -14,7 +14,7 @@ Upgrade packages and dependencies using Yarn. Try to run locally _and_ build bef
 # Navigate to the website folder
 cd website
 
-# Update NodeJS with fnm
+# Update NodeJS with fnm - Use `pwsh -NoProfile` if "error: Can't download the requested binary: Access is denied. (os error 5)"
 fnm install --lts --corepack-enabled
 fnm default <new_version>
 fnm use <new_version>
