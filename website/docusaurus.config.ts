@@ -120,7 +120,11 @@ const config: Config = {
       ]
     },
     prism: {
-      additionalLanguages: ['powershell'],
+      additionalLanguages: [
+        'bash',
+        'batch',
+        'powershell'
+      ],
       darkTheme: prismThemes.dracula,
       theme: prismThemes.github
     },

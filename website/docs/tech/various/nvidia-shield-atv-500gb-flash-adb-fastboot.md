@@ -17,7 +17,9 @@ title: Flash nVidia Shield Android TV Pro 500gb with ADB and Fastboot
 
 If you're able to boot into the Shield and enable USB Debugging (developer menu, press repeatedly on Settings \ About \ Build Number to unlock):
 
-* adb reboot bootloader
+```batch
+adb reboot bootloader
+```
 
 #### Manually
 
@@ -32,8 +34,11 @@ If you're able to boot into the Shield and enable USB Debugging (developer menu,
 
 With nVidia Shield Android TV 500gb, the reset process after unlocking bootloader will take hours to complete. This is because the whole HDD must be formatted, even though it contains little data.
 
-* fastboot oem unlock
-* Follow instructions on the nVidia Sheild Android TV unit
+```batch
+fastboot oem unlock
+```
+
+Follow instructions on the nVidia Sheild Android TV unit.
 
 ### Flash the firmware
 
@@ -41,7 +46,7 @@ Make sure you complete flashing all the files in the same order as bellow, befor
 
 * Enter bootloader mode after bootloader unlock process is done
 
-```bash
+```batch
 fastboot flash staging blob
 fastboot flash boot boot.img
 fastboot flash recovery recovery.img
@@ -62,13 +67,13 @@ https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on
 #### Disable driver signature verification on Windows 8.1 & 10
 
 * UEFI Secure Boot = Off
-* CMD as admin: "bcdedit /set testsigning on"
+* CMD as admin: `bcdedit /set testsigning on`
 * Reboot
 
 #### Enable driver signature verification on Windows 8.1 & 10
 
 * UEFI Secure Boot = On
-* CMD as admin: "bcdedit /set testsigning off"
+* CMD as admin: `bcdedit /set testsigning off`
 * Reboot
 
 ## Resources
