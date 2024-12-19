@@ -5,7 +5,7 @@ title: Flash nVidia Shield Android TV Pro 500gb with ADB and Fastboot
 ## Prerequisites
 
 * Google Android ADB and Fastboot.
-  * If on Windows I recommend using Scoop: <https://scoop.sh/#/apps?q=adb+fastboot>.
+  * If on Windows I recommend using [Scoop](https://scoop.sh/#/apps?q=adb+fastboot>) or [WinGet](https://github.com/microsoft/winget-pkgs/tree/master/manifests/g/Google/PlatformTools).
 * Download latest firmware and ADB & Fastboot drivers from nVidia Developers.
 * Minimum firmware version: Android 6.0.0 Marshmellow (included with Shield Experience Upgrade 3.0)
 
