@@ -1,0 +1,36 @@
+name: Build Docusaurus
+
+on:
+  pull_requests:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build_docusaurus:
+    name: Build Docusaurus
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+    defaults:
+      defaults:
+      run:
+        working-directory: ./website
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Enable corepack
+        run: corepack enable
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          node-version-file: './website/.node-version'
+        working-directory: ./website
+      - name: Yarn install
+        run: yarn install
+      - name: Node.js build
+        run: node --run build
