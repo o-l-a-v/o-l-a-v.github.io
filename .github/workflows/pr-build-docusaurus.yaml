@@ -31,8 +31,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache: 'yarn'
+          cache-dependency-path: './website/yarn.lock'
           node-version-file: './website/.node-version'
       - name: 🧶 Yarn install
-        run: yarn install
+        run: yarn install --immutable
       - name: 🔨 Node.js build
         run: node --run build
