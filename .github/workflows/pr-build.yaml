@@ -21,18 +21,18 @@ jobs:
       run:
         working-directory: ./website
     steps:
-      - name: Checkout repository
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref }}"
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Enable corepack
+      - name: ⚙️ Enable corepack
         run: corepack enable
-      - name: Setup Node.js
+      - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v4
         with:
           cache: 'yarn'
           node-version-file: './website/.node-version'
-      - name: Yarn install
+      - name: 🧶 Yarn install
         run: yarn install
-      - name: Node.js build
+      - name: 🔨 Node.js build
         run: node --run build

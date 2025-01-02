@@ -14,11 +14,11 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref }}"
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Install the latest version of uv
+      - name: ⬇️ Install the latest version of uv
         uses: astral-sh/setup-uv@v4
-      - name: Run zizmor 🌈
+      - name: 🔍 Run zizmor
         run: uvx zizmor .github/workflows --format plain --offline --min-confidence low --min-severity low
