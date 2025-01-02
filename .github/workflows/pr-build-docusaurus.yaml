@@ -1,11 +1,11 @@
 name: Build Docusaurus
 
-run-name: 'Build Docusaurus - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
 on:
-  pull_requests:
+  pull_request:
     paths:
-      - ./website/**
+      - website/**
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -18,23 +18,22 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     defaults:
-      defaults:
       run:
         working-directory: ./website
     steps:
-      - name: Checkout repository
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref }}"
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: Enable corepack
+      - name: ⚙️ Enable corepack
         run: corepack enable
-      - name: Setup Node.js
+      - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v4
         with:
           cache: 'yarn'
+          cache-dependency-path: './website/yarn.lock'
           node-version-file: './website/.node-version'
-        working-directory: ./website
-      - name: Yarn install
-        run: yarn install
-      - name: Node.js build
+      - name: 🧶 Yarn install
+        run: yarn install --immutable
+      - name: 🔨 Node.js build
         run: node --run build
