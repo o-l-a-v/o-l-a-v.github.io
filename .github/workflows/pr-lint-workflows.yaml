@@ -18,7 +18,19 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+      - name: Get changed files 🔍
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            workflows:
+              - added|modified: '.github/workflows/**'
+          list-files: escape
       - name: ⬇️ Install the latest version of uv
+        if: steps.filter.outputs.workflows == 'true'
         uses: astral-sh/setup-uv@v4
       - name: 🔍 Run zizmor
-        run: uvx zizmor .github/workflows --format plain --offline --min-confidence low --min-severity low
+        if: steps.filter.outputs.workflows == 'true'
+        run: |
+          uvx zizmor --format plain --offline --min-confidence low --min-severity low \
+          ${{ steps.filter.outputs.workflows_files }}
