@@ -32,7 +32,6 @@ jobs:
         with:
           cache: 'yarn'
           node-version-file: './website/.node-version'
-          working-directory: ./website
       - name: Yarn install
         run: yarn install
       - name: Node.js build
