@@ -9,6 +9,8 @@ slug: /
 
 :::info
 This web page is for learning and experimenting, and will always be under construction. 🔨
+
+Trigger build.
 :::
 
 ## About this page
