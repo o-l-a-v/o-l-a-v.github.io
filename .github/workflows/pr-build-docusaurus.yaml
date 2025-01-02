@@ -1,6 +1,6 @@
 name: Build Docusaurus
 
-run-name: 'Build Docusaurus - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
 on:
   pull_request:
