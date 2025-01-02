@@ -5,7 +5,7 @@ run-name: 'Build Docusaurus - [${{ github.event.pull_request.title }} #${{ githu
 on:
   pull_request:
     paths:
-      - ./website/**
+      - './website/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
