@@ -9,8 +9,6 @@ slug: /
 
 :::info
 This web page is for learning and experimenting, and will always be under construction. 🔨
-
-Testing. Testing. Testing.
 :::
 
 ## About this page
