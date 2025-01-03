@@ -14,12 +14,12 @@ concurrency:
 jobs:
   build_docusaurus:
     name: Build Docusaurus
-    permissions:
-      contents: read
-    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./website
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
     steps:
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref }}"
         uses: actions/checkout@v4
