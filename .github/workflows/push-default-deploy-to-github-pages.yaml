@@ -1,0 +1,61 @@
+name: Deploy to GitHub pages
+
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
+
+on:
+  push:
+    branches:
+      - $default-branch
+    paths:
+      - website/**
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build Docusaurus
+    defaults:
+      run:
+        working-directory: ./website
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref }}"
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: ⚙️ Enable corepack
+        run: corepack enable
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: 'yarn'
+          cache-dependency-path: './website/yarn.lock'
+          node-version-file: './website/.node-version'
+      - name: 🧶 Yarn install
+        run: yarn install --immutable
+      - name: 🔨 Node.js build
+        run: node --run build
+      - name: ⬆️ Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        id: artifact
+        with:
+          path: website/build/
+  deploy:
+    name: Deploy to GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.artifact.outputs.page_url }}
+    needs: build
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
