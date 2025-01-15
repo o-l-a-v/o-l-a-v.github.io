@@ -8,14 +8,14 @@ on:
       - '**.md'
 
 jobs:
-  zizmor:
+  markdownlint-cli2:
     name: Run markdownlint-cli2
     permissions:
       contents: read
       pull-requests: read
     runs-on: ubuntu-latest
     steps:
-      - name: 🛎️ GitHub checkout branch "${{ github.head_ref }}"
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v4
         with:
           persist-credentials: false
