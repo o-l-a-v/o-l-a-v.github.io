@@ -1,9 +1,9 @@
-name: 'Dependency Review'
+name: Dependency Review
+
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
 on:
   pull_request:
-    paths:
-      - website/**
 
 jobs:
   dependency-review:
@@ -11,9 +11,9 @@ jobs:
     permissions:
       contents: read
     steps:
-      - name: 'Checkout Repository'
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v4
         with:
           persist-credentials: false
-      - name: 'Dependency Review'
+      - name: 🔬 Dependency review
         uses: actions/dependency-review-action@v4
