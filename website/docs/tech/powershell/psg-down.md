@@ -55,11 +55,12 @@ Resources:
 Example usage with PSResourceGet:
 
 ```powershell
-# Register pwsh.gallery as PSResourceGet repository
-Register-PSResourceRepository -Name 'pwsh.gallery' -Uri 'https://pwsh.gallery/index.json' -ApiVersion 3
+# Register pwsh.gallery as a PSResourceGet resource repository
+Register-PSResourceRepository -Name 'pwsh.gallery' -Uri 'https://pwsh.gallery/index.json' `
+    -ApiVersion 3 -Priority 60
 
 # Find a module with it
-Find-PSResource -Repository 'pwsh.gallery' -Name 'Az.Accounts'
+Find-PSResource -Repository 'pwsh.gallery' -Name 'Az.Accounts' | Format-List
 ```
 
 Limitations:
@@ -78,7 +79,7 @@ If only PowerShell Gallery itself is down, the CDN used to serve packages (`*.nu
 AFAIK, PSResourceGet does not support installing packages from a URL, but if you can download the `.nupkg` file it can be installed locally like so:
 
 ```powershell
-# Register file system path as repository
+# Register file system path as a PSResourceGet resource repository
 Register-PSResourceRepository -Name 'Local' -Uri 'D/some/local/path' -ApiVersion 'local'
 
 # Install latest available version of a package you've downloaded as `.nupkg`
@@ -112,8 +113,23 @@ Microsoft is working on getting their PowerShell modules to a public ACR (Azure 
 
 * MAR: <https://mcr.microsoft.com/>
 * Az.Accounts in MAR: <https://mcr.microsoft.com/en-us/artifact/mar/psresource/az.accounts/tags>
-* Example API request to get Az.Accounts versions: <https://mcr.microsoft.com/v2/psresource/az.accounts/tags/list>
+* Example URL for a Rest API Get request to get Az.Accounts versions: <https://mcr.microsoft.com/v2/psresource/az.accounts/tags/list>
 * PSResourceGet about ACR support <https://learn.microsoft.com/en-us/powershell/gallery/powershellget/supported-repositories#azure-container-registry>
+
+Example usage:
+
+:::tip FYI
+Requires PSResourceGet \>= v1.1.0
+:::
+
+```powershell
+# Register MAR as a PSResourceGet resource repository
+Register-PSResourceRepository -Name 'MAR' -Uri 'https://mcr.microsoft.com/' `
+    -ApiVersion 'ContainerRegistry' -Priority 60
+
+# Find a module with it
+Find-PSresource -Repository 'MAR' -Name 'Az.Resources' | Format-List
+```
 
 ## Module specific mirrors
 
