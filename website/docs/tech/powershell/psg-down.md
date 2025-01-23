@@ -111,7 +111,8 @@ Limitations with a NuGet proxy:
 Microsoft is working on getting their PowerShell modules to a public ACR (Azure Container Registry) instance called MAR (Microsoft Artifact Registry), also referred to as MCR (Microsoft Container Registry). PSResourceGet supports ACR as a repository.
 
 * MAR: <https://mcr.microsoft.com/>
-* Example API request to get tags: <https://mcr.microsoft.com/v2/psresource/az.accounts/tags/list>
+* Az.Accounts in MAR: <https://mcr.microsoft.com/en-us/artifact/mar/psresource/az.accounts/tags>
+* Example API request to get Az.Accounts versions: <https://mcr.microsoft.com/v2/psresource/az.accounts/tags/list>
 * PSResourceGet about ACR support <https://learn.microsoft.com/en-us/powershell/gallery/powershellget/supported-repositories#azure-container-registry>
 
 ## Module specific mirrors
