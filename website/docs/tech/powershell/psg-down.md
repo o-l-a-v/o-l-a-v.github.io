@@ -131,6 +131,24 @@ Register-PSResourceRepository -Name 'MAR' -Uri 'https://mcr.microsoft.com/' `
 Find-PSresource -Repository 'MAR' -Name 'Az.Resources' | Format-List
 ```
 
+Example API usage:
+
+```powershell
+# Get available versions of Az.Resources
+Invoke-RestMethod -Method 'Get' -Uri (
+    'https://mcr.microsoft.com/v2/psresource/az.resources/tags/list'
+)
+
+# Get metadata from the manifest of a specific version of Az.Resources
+(
+    Invoke-RestMethod -Method 'Get' -Uri (
+        'https://mcr.microsoft.com/v2/psresource/az.resources/manifests/7.8.0'
+    ) -Headers @{
+        'Accept' = [string] 'application/vnd.oci.image.manifest.v1+json'
+    }
+).'layers'.'annotations'.'metadata' | ConvertFrom-Json
+```
+
 ## Module specific mirrors
 
 ### AWS
