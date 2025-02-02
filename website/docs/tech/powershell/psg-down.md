@@ -134,6 +134,13 @@ Find-PSresource -Repository 'MAR' -Name 'Az.Resources' | Format-List
 Example API usage:
 
 ```powershell
+# List available packages for PowerShell
+(
+  Invoke-RestMethod -Method 'Get' -Uri 'https://mcr.microsoft.com/v2/_catalog'
+).'repositories'.Where{
+    $_.StartsWith('psresource/')
+} | Sort-Object
+
 # Get available versions of Az.Resources
 Invoke-RestMethod -Method 'Get' -Uri (
     'https://mcr.microsoft.com/v2/psresource/az.resources/tags/list'
