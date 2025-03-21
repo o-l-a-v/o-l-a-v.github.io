@@ -6,8 +6,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - website/**
+    # paths:
+    #   - website/**
 
 concurrency:
   group: 'pages'
@@ -58,6 +58,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-artifact
+          path: build-artifact
       - name: 🚢 Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
