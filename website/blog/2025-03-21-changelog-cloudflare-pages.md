@@ -20,7 +20,7 @@ I then waited days and weeks, tried to change nameservers multiple times which a
 
 I then called GoDaddy support, they said DNSSEC was still enabled according to their backend. An incident was made, claims of DNSSEC finally being disabled too, but the problem was not solved. After being in contact with three support reps in a timespan of over a week, I still had no progress. We're now 2.5 weeks in since I disabled DNSSEC in GoDaddy.
 
-Let that sink in: **Two and a half weeks with DNS not working/propagating, and not being able to change nameservers to a different DNS provider.**
+Let that sink in: **Two and a half weeks with DNS not working/propagating, and not being able to change nameservers to a different DNS provider**.
 
 Luckily this is a lab/test domain, so I don't really care. But 2.5 weeks downtime with no progress is unacceptable for a registrar.
 
