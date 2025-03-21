@@ -63,7 +63,7 @@ jobs:
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy build-artifact --branch=production --project-name=${{ env.CLOUDFLARE_PAGES_NAME }}
+          command: pages deploy build-artifact --branch=production --project-name=${{ vars.CLOUDFLARE_PAGES_NAME }}
   deploy-github:
     name: Deploy to GitHub Pages
     needs: build
@@ -76,4 +76,4 @@ jobs:
       - name: 🚢 Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          name: build-artifact
+          artifact_name: build-artifact
