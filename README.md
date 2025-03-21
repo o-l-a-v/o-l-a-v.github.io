@@ -2,7 +2,7 @@
 
 ## About
 
-Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docusaurus](https://docusaurus.io/), hosted in [GitHub Pages](https://pages.github.com/).
+Here I'll maybe, eventually, create docs, guides and a blog. Created with [Docusaurus](https://docusaurus.io/), hosted in [Cloudflare Pages (primary)](https://pages.cloudflare.com/) and [GitHub Pages (secondary)](https://pages.github.com/).
 
 ## Project help
 

@@ -6,8 +6,8 @@ on:
   push:
     branches:
       - main
-    # paths:
-    #   - website/**
+    paths:
+      - website/**
 
 concurrency:
   group: 'pages'
@@ -46,7 +46,7 @@ jobs:
           if-no-files-found: error
           name: build-artifact
           path: website/build/
-      - name: ⬆️ Upload artifact
+      - name: ⬆️ Upload build artifact specific for GitHub Pages
         uses: actions/upload-pages-artifact@v3
         id: artifact-ghp
         with:
