@@ -46,6 +46,12 @@ jobs:
           if-no-files-found: error
           name: build-artifact
           path: website/build/
+      - name: ⬆️ Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        id: artifact-ghp
+        with:
+          name: build-artifact-ghp
+          path: website/build/
   deploy-cloudflare:
     name: Deploy to Cloudflare Pages
     needs: build
@@ -67,6 +73,9 @@ jobs:
           command: pages deploy build-artifact --branch=production --project-name=${{ vars.CLOUDFLARE_PAGES_NAME }}
   deploy-github:
     name: Deploy to GitHub Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.artifact-ghp.outputs.page_url }}
     needs: build
     permissions:
       contents: read
@@ -77,4 +86,4 @@ jobs:
       - name: 🚢 Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: build-artifact
+          artifact_name: build-artifact-ghp
