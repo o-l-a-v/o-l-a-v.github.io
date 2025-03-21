@@ -1,4 +1,4 @@
-name: Deploy to GitHub pages
+name: Deploy to Cloudflare Pages and GitHub Pages
 
 run-name: '${{ github.workflow }} by @${{ github.actor }}'
 
@@ -39,16 +39,34 @@ jobs:
         run: yarn install --immutable
       - name: 🔨 Node.js build
         run: node --run build
-      - name: ⬆️ Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: ⬆️ Upload build artifact
+        uses: actions/upload-artifact@v4
         id: artifact
         with:
+          if-no-files-found: error
+          name: build-artifact
           path: website/build/
-  deploy:
+  deploy-cloudflare:
+    name: Deploy to Cloudflare Pages
+    needs: build
+    permissions:
+      contents: read
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+      - name: 🚢 Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          environment: production
+          command: pages deploy build-artifact --project-name=${{ env.CLOUDFLARE_PAGES_NAME }}
+  deploy-github:
     name: Deploy to GitHub Pages
-    environment:
-      name: github-pages
-      url: ${{ steps.artifact.outputs.page_url }}
     needs: build
     permissions:
       contents: read
@@ -56,6 +74,13 @@ jobs:
       pages: write
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
+      - name: ⬇️ Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-artifact
+      - name: 🚢 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          name: github-pages
+          path: build-artifact
