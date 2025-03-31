@@ -20,7 +20,8 @@ jobs:
   changes:
     name: Find relevant changed files
     outputs:
-      files: ${{ steps.filter.outputs.files }}
+      changed: ${{ steps.filter.outputs.files }}
+      files: ${{ steps.filter.outputs.changed_files }}
     permissions:
       contents: read
       pull-requests: read
@@ -35,7 +36,7 @@ jobs:
         uses: dorny/paths-filter@v3
         with:
           filters: |
-            files:
+            changed:
               - added|modified: '**.json'
               - added|modified: '**.jsonc'
               - added|modified: '**.md'
@@ -44,18 +45,18 @@ jobs:
               - added|modified: '**.yml'
           list-files: escape
       - name: 🪲 Debug
-        run: echo ${{ steps.filter.outputs.files_files }}
+        run: echo ${{ steps.filter.outputs.changed_files }}
   editorconfig-checker:
     name: Run EditorConfig-Checker on relevant changed files
     needs: changes
-    if: ${{ needs.changes.outputs.files == 'true' }}
+    if: ${{ needs.changes.outputs.changed == 'true' }}
     permissions:
       contents: read
       pull-requests: read
     runs-on: ubuntu-latest
     steps:
       - name: 🪲 Debug
-        run: echo ${{ needs.changes.outputs.files_files }}
+        run: echo ${{ needs.changes.outputs.changed_files }}
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v4
         with:
@@ -65,4 +66,4 @@ jobs:
       - name: 🔍 Run EditorConfig-Checker
         run: |
           /home/runner/go/bin/editorconfig-checker -format github-actions \
-          ${{ needs.changes.outputs.files_files }}
+          ${{ needs.changes.outputs.changed_files }}
