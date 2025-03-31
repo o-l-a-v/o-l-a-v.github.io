@@ -56,7 +56,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🪲 Debug
-        run: echo ${{ needs.changes.outputs.changed_files }}
+        run: echo ${{ needs.changes.outputs.files }}
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v4
         with:
@@ -66,4 +66,4 @@ jobs:
       - name: 🔍 Run EditorConfig-Checker
         run: |
           /home/runner/go/bin/editorconfig-checker -format github-actions \
-          ${{ needs.changes.outputs.changed_files }}
+          ${{ needs.changes.outputs.files }}
