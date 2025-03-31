@@ -12,6 +12,10 @@ on:
       - '**.yaml'
       - '**.yml'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   changes:
     name: Find relevant changed files
@@ -38,7 +42,7 @@ jobs:
               - added|modified: '**.yml'
           list-files: escape
       - name: 🪲 Debug
-        run: echo ${{ steps.filter.outputs.files_files }}
+        run: echo ${{ needs.changes.outputs.files_files }}
   editorconfig-checker:
     name: Run EditorConfig-Checker on relevant changed files
     needs: changes
@@ -48,6 +52,8 @@ jobs:
       pull-requests: read
     runs-on: ubuntu-latest
     steps:
+      - name: 🪲 Debug
+        run: echo ${{ steps.filter.outputs.files_files }}
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v4
         with:
