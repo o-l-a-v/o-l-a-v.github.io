@@ -38,7 +38,7 @@ jobs:
               - added|modified: '**.yml'
           list-files: escape
       - name: 🪲 Debug
-        run: echo ${{ steps.filter.outputs.workflows_files }}
+        run: echo ${{ steps.filter.outputs.files_files }}
   editorconfig-checker:
     name: Run EditorConfig-Checker on relevant changed files
     needs: changes
