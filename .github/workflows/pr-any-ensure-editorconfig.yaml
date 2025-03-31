@@ -53,4 +53,4 @@ jobs:
       - name: ⬇️ Install EditorConfig-Checker
         run: go install github.com/editorconfig-checker/editorconfig-checker/v3/cmd/editorconfig-checker@latest
       - name: 🔍 Run EditorConfig-Checker
-        run: editorconfig-checker -config .editorconfig -format plain ${{ needs.changes.outputs.files_files }}
+        run: /home/runner/go/bin/editorconfig-checker -config .editorconfig -format plain ${{ needs.changes.outputs.files_files }}
