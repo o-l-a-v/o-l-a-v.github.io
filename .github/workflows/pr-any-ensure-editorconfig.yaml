@@ -40,7 +40,7 @@ jobs:
   editorconfig-checker:
     name: Run EditorConfig-Checker on relevant changed files
     needs: changes
-    if: ${{ needs.changes.outputs.files == 'true' }}
+    # if: ${{ needs.changes.outputs.files == 'true' }}
     permissions:
       contents: read
       pull-requests: read
