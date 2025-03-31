@@ -62,5 +62,5 @@ jobs:
         run: go install github.com/editorconfig-checker/editorconfig-checker/v3/cmd/editorconfig-checker@latest
       - name: 🔍 Run EditorConfig-Checker
         run: |
-          /home/runner/go/bin/editorconfig-checker -config .editorconfig -format github-actions \
+          /home/runner/go/bin/editorconfig-checker -format github-actions \
           ${{ needs.changes.outputs.files_files }}
