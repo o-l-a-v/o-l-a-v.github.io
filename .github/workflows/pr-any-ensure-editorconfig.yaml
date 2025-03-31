@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🪲 Debug
-        run: echo ${{ steps.filter.outputs.files_files }}
+        run: echo ${{ needs.changes.outputs.files_files }}
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v4
         with:
