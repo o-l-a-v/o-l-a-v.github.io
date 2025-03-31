@@ -20,7 +20,7 @@ jobs:
   changes:
     name: Find relevant changed files
     outputs:
-      changed: ${{ steps.filter.outputs.files }}
+      changed: ${{ steps.filter.outputs.changed }}
       files: ${{ steps.filter.outputs.changed_files }}
     permissions:
       contents: read
