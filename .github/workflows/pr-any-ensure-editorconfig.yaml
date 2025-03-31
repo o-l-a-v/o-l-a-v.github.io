@@ -44,7 +44,7 @@ jobs:
       contents: read
       pull-requests: read
     runs-on: ubuntu-latest
-    if: needs.find-changed-files.steps.filter.outputs.files == 'true'
+    if: needs.find-changed-files.outputs.files == 'true'
     steps:
       - name: ⬇️ Install EditorConfig-Checker
         run: go install github.com/editorconfig-checker/editorconfig-checker/v3/cmd/editorconfig-checker@latest
