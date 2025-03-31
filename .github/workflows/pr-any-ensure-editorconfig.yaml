@@ -1,0 +1,52 @@
+name: Ensure changed files follows EditorConfig settings
+
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
+
+on:
+  pull_request:
+    paths:
+      - '**.json'
+      - '**.jsonc'
+      - '**.md'
+      - '**.ps1'
+      - '**.yaml'
+      - '**.yml'
+
+jobs:
+  find-changed-files:
+    name: Find relevant changed files
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: 🔍 Get changed files
+        id: filter
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            files:
+              - added|modified: '**.json'
+              - added|modified: '**.jsonc'
+              - added|modified: '**.md'
+              - added|modified: '**.ps1'
+              - added|modified: '**.yaml'
+              - added|modified: '**.yml'
+          list-files: escape
+  editorconfig-checker:
+    name: Run EditorConfig-Checker on relevant changed files
+    needs: find-changed-files
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-latest
+    if: needs.find-changed-files.steps.filter.outputs.files == 'true'
+    steps:
+      - name: ⬇️ Install EditorConfig-Checker
+        run: go install github.com/editorconfig-checker/editorconfig-checker/v3/cmd/editorconfig-checker@latest
+      - name: 🔍 Run EditorConfig-Checker
+        run: ec
