@@ -7,14 +7,16 @@ const config: Config = {
   tagline: 'Some guides and maybe a blog?',
   favicon: 'img/favicon.ico',
 
+  // Domain and URL path
+  baseUrl: '/', // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
+  trailingSlash: false,
+  url: 'https://olavrb.no', // Set the production url of your site here
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  url: 'https://olavrb.no', // Set the production url of your site here
-  baseUrl: '/', // Set the /<baseUrl>/ pathname under which your site is served. For GitHub pages deployment, it is often '/<projectName>/'
   deploymentBranch: 'gh-pages',
   organizationName: 'o-l-a-v', // Usually your GitHub org/user name.
   projectName: 'o-l-a-v.github.io', // Usually your repo name.
-  trailingSlash: false,
 
   // Behavior
   onBrokenAnchors: 'throw',
@@ -50,6 +52,7 @@ const config: Config = {
           showLastUpdateTime: true
         },
         blog: {
+          onUntruncatedBlogPosts: 'throw',
           showReadingTime: false,
         },
         theme: {
@@ -60,6 +63,13 @@ const config: Config = {
   ],
 
   themeConfig: {
+    // Search
+    algolia: {
+      appId: 'AQMXCZ9XJV',
+      apiKey: '84d8109b17b3f20e8efee95f19255e12',
+      indexName: 'olavrb',
+      contextualSearch: false
+    },
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     colorMode: {

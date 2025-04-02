@@ -14,6 +14,8 @@ The site is now deployed to Cloudflare Pages as well as GitHub Pages. Currently 
 
 I previously chose GoDaddy as registrar and DNS provider for my `.no` TLD. Big mistake.
 
+<!-- truncate -->
+
 To more easily utilize Cloudflare features like reverse proxy and WAF I wanted to move the page content to Cloudflare Pages, and thus DNS management to Cloudflare too. I tried changing nameservers in GoDaddy, it failed with error "Data management policy violation". Very describing. I then remembered I had DNSSEC enabled. I disabled it in the web GoDaddy web GUI, it reported success.
 
 I then waited days and weeks, tried to change nameservers multiple times which always resulted in the same error. Not only that, I noticed DNS propagation had stopped working too. As in, my DNS records did not propagate to many public DNS providers, like Google, Quad9 and Cloudflare. Thus, my domain and this webpage was down.
