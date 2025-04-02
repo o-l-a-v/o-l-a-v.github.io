@@ -22,9 +22,9 @@ Lowering Fox Float forks is really easy, but getting the needed information on h
 Here is my before and after shots, for inspiration:
 
 * Before
-  ![before](https://i.imgur.com/ZUrySwE.jpg)
+  ![before](./img/Before.jpg)
 * After
-  ![after](https://i.imgur.com/e2LN9mx.jpg)
+  ![after](./img/After.jpg)
 
 ## F.A.Q
 
@@ -55,9 +55,9 @@ Example pictures taken from Fox Tech Center.
 
 | What         | Picture                                          |
 | :----------- | :----------------------------------------------- |
-| Fox 32       | ![fox-32](https://i.imgur.com/xcbzuAi.png)       |
-| Fox 36 160mm | ![fox-36-160mm](https://i.imgur.com/Vi6369e.png) |
-| Fox 36 180mm | ![fox-36-180mm](https://i.imgur.com/3xT5H77.png) |
+| Fox 32       | ![fox-32](<./img/Travel 32 Fox 120mm.png>)       |
+| Fox 36 160mm | ![fox-36-160mm](<./img/Travel 36 Fox 160mm.png>) |
+| Fox 36 180mm | ![fox-36-180mm](<./img/Travel 36 Fox 180mm.png>) |
 
 ### I need help with a different Fox fork
 
@@ -69,7 +69,7 @@ Fox has made a whole lot of information available for us customers. You can get 
 
 Stuff you'll need:
 
-![requirements](https://i.imgur.com/FVGg2Kz.jpg)
+![requirements](./img/DSC01542.jpg)
 
 ### Tools
 
@@ -88,7 +88,7 @@ Stuff you'll need:
 
 * Spacer (25mm Ø is used for 32mm, 34mm and 36mm.
 
-![parts-spacer](https://i.imgur.com/zL7dlYj.png)
+![parts-spacer](./img/Spacers.png)
 
 ### Lubricant
 
@@ -106,25 +106,25 @@ Let's start.. The whole process ONLY involves the air side of the fork:
 
 Remove stem, headset and front wheel from the fork
 
-![remove-fork](https://i.imgur.com/JBzRVfm.jpg)
+![remove-fork](./img/DSC01544.jpg)
 
 ### 2. IMPORTANT: Let the air out
 
 If you fail this step something fatal WILL happen.
 
-![let-air-out](https://i.imgur.com/e1iKZgL.jpg)
+![let-air-out](./img/DSC01546.jpg)
 
 ### 3. Condence the fork
 
-![condense-fork](https://i.imgur.com/6eqmt37.jpg)
+![condense-fork](./img/DSC01548.jpg)
 
 ### 4. Unscrew the 10mm nut in the bottom
 
 CHILL: No oil will get out yet.
 
-![unscrew-bottom-nut](https://i.imgur.com/UxmAvXl.jpg)
+![unscrew-bottom-nut](./img/DSC01549.jpg)
 
-![bottom-nut-removed](https://i.imgur.com/XNep7pW.jpg)
+![bottom-nut-removed](./img/DSC01552.jpg)
 
 ### 5. Unscrew the air top cap
 
@@ -135,7 +135,7 @@ CHILL: No oil will get out yet.
 
 :::
 
-![unscrew-air-top-cap](https://i.imgur.com/aGvxWW2.jpg)
+![unscrew-air-top-cap](./img/DSC01555.jpg)
 
 ### 6. Get the oil (float fluid) out at the top
 
@@ -143,19 +143,19 @@ If you don't have new oil: Keep it for later.
 
 IMPORTANT: The oil at the top differs from the oil at the bottom. Do not blend!
 
-![remove-top-oil](https://i.imgur.com/zJiAOKP.jpg)
+![remove-top-oil](./img/DSC01557.jpg)
 
 ### 7. Push bottom bolt
 
 Press the bottom bolt in to the fork, by tapping gently with a hammer. Let the oil drain
 
-![push-bottom-bolt](https://i.imgur.com/kXH8wlq.jpg)
+![push-bottom-bolt](./img/DSC01558.jpg)
 
 ### 8. Get the assembly out
 
 Use something to press the whole thing from the bottom and out at the top. As soon as you can grab the top with your hands: Do so, and drag the whole thing out
 
-![get-assembly-out](https://i.imgur.com/V3lqdvj.jpg)
+![get-assembly-out](./img/DSC01559.jpg)
 
 ### 9. Prepare spacers
 
@@ -164,7 +164,7 @@ You should've already decide how much you want to lower/rise your fork.
 * I want to go from 100mm to 80mm, so I use a 20mm spacer.
 * TIP: Measure the spacers just in case!
 
-![measure-spacer](https://i.imgur.com/O4doubC.jpg)
+![measure-spacer](./img/DSC01560.jpg)
 
 ### 10. Make room for more spacers
 
@@ -172,27 +172,27 @@ Slide the old spacers down to get space for the new one(s)
 
 * If you are going to extend the travel of your fork; remove spacers and jump to step 13.
 
-![make-room-for-spacers](https://i.imgur.com/0j1bAoG.jpg)
+![make-room-for-spacers](./img/DSC01561.jpg)
 
 ### 11. Get the spacer in place
 
-![spacer-before](https://i.imgur.com/CJzENMj.jpg)
+![spacer-before](./img/DSC01562.jpg)
 
 It should look like this:
 
-![spacer-after](https://i.imgur.com/gWzHiC6.jpg)
+![spacer-after](./img/DSC01563.jpg)
 
 ### 12. Prepare Foxfloat fluid
 
 Take some float fluid in a small syringe. This is the easiest way to lubricate gaskets and stuff.
 
-![prepare-float-fluid](https://i.imgur.com/2lkajbv.jpg)
+![prepare-float-fluid](./img/DSC01569.jpg)
 
 ### 13. Stick the whole thing back in
 
 Not so much that the bolt get through the whole at the bottom. Get some float fluid on gaskets, seals, and stuff
 
-![reinsert](https://i.imgur.com/TGE2sCe.jpg)
+![reinsert](./img/DSC01565.jpg)
 
 ### 14. Get some oil in the bottom
 
@@ -202,40 +202,40 @@ Fox recommends Fox 10wt green.
 * **Fox Float 36 160mm:** 25ml/cc
 * **Fox Float 36 180mm** 40ml/cc
 
-![fill-bottom](https://i.imgur.com/4HFRlNi.jpg)
+![fill-bottom](./img/DSC01566.jpg)
 
 ### 15. Fasten bottom nut
 
 Press the whole thing further down, so the bolt gets out at the bottom. Grease the bolt, and get the nut back on
 
 NB: The nut is made of aluminium, therefore it's very important that you don't over tighten it! Fox says **5.7 newtonmeter**.
-![fasten-bottom-nut](https://i.imgur.com/Aho0nWz.jpg)
+![fasten-bottom-nut](./img/DSC01568.jpg)
 
 ### 16. Get 5 ml/cc of Fox Fluid at the top
 
-![fill-top](https://i.imgur.com/F03Fmgl.jpg)
+![fill-top](./img/DSC01567.jpg)
 
 ### 17. Lubricate the top cap with some Fox Fluid
 
 Both seals and threads
 
-![lubricate-seals](https://i.imgur.com/TdrmLNm.jpg)
+![lubricate-seals](./img/DSC01570.jpg)
 
 ### 18. Mount the air top cap
 
 Tighten it to **24-25 newtonmeter**
 
-![mount-air-top-cap](https://i.imgur.com/UPPYjLo.jpg)
+![mount-air-top-cap](./img/DSC01571.jpg)
 
 ### 19. Add air
 
 When everything is tight, get some air in that fork
 
-![add-air](https://i.imgur.com/Pvf7tVi.jpg)
+![add-air](./img/DSC01572.jpg)
 
 ### 20. CONGRATS! You're almost finished
 
-![finished](https://i.imgur.com/p1f5exb.jpg)
+![finished](./img/DSC01573.jpg)
 
 ### 21. Reassemble your bike
 
