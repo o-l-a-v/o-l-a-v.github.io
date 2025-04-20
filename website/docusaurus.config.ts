@@ -14,9 +14,9 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  deploymentBranch: 'gh-pages',
-  organizationName: 'o-l-a-v', // Usually your GitHub org/user name.
-  projectName: 'o-l-a-v.github.io', // Usually your repo name.
+  // deploymentBranch: 'gh-pages',
+  // organizationName: 'o-l-a-v', // Usually your GitHub org/user name.
+  // projectName: 'o-l-a-v.github.io', // Usually your repo name.
 
   // Behavior
   onBrokenAnchors: 'throw',
@@ -85,7 +85,7 @@ const config: Config = {
           label: 'Doc',
         },
         {
-          to: '/blog',
+          to: 'blog',
           label: 'Blog',
           position: 'left'
         },
@@ -93,8 +93,7 @@ const config: Config = {
           href: 'https://github.com/o-l-a-v/o-l-a-v.github.io',
           position: 'right',
           className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-
+          'aria-label': 'GitHub repository'
         },
       ],
     },
@@ -109,7 +108,11 @@ const config: Config = {
               href: 'https://docusaurus.io/',
             },
             {
-              label: 'GitHub Pages',
+              label: 'Cloudflare Pages (primary)',
+              href: 'https://pages.cloudflare.com/'
+            },
+            {
+              label: 'GitHub Pages (secondary)',
               href: 'https://pages.github.com/'
             }
           ],
