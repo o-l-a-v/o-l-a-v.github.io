@@ -85,7 +85,7 @@ const config: Config = {
           label: 'Doc',
         },
         {
-          to: '/blog',
+          to: 'blog',
           label: 'Blog',
           position: 'left'
         },
@@ -93,8 +93,7 @@ const config: Config = {
           href: 'https://github.com/o-l-a-v/o-l-a-v.github.io',
           position: 'right',
           className: 'header-github-link',
-          'aria-label': 'GitHub repository',
-
+          'aria-label': 'GitHub repository'
         },
       ],
     },
