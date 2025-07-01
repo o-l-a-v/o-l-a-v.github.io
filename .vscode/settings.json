@@ -1,4 +1,7 @@
 {
+  "[javascript][typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[markdown]": {
     "editor.defaultFormatter": "Jota0222.multi-formatter",
     "multiFormatter.formatterList": [
