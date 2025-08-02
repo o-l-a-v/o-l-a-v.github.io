@@ -1,5 +1,5 @@
 ---
-title: Wired backhaul
+title: Wired backhaul diagrams
 keywords:
   - google wifi
   - nest wifi
