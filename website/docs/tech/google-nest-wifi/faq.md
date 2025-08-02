@@ -27,14 +27,7 @@ It's not possible to delete devices from the device list, but they should disapp
 
 The only way for force delete the whole list is to delete the Nest Wifi from the Google Home app and set up the whole network from scratch.
 
-### Why do clients not connect to the closest Nest Wifi unit?
-
-It's the client device that decides what access point to connect to, as these replies explains more in depth:
-
-* 2023-12-18: <https://www.googlenestcommunity.com/t5/Nest-Wifi/Google-wifi-units-connect-worst-wifi-point/m-p/564782/highlight/true#M49858>
-* 2023-12-14: <https://www.googlenestcommunity.com/t5/Nest-Wifi/Nest-Wifi-Set-a-Dedicated-Point/m-p/562259#M49820>
-
-### Google Home won't accept the setup code
+### Google Home - Won't accept the setup code
 
 Try to force close the Google Home app, clear cache, and try to start the setup process again. Sometimes the Google Home app gets what device it's requesting a code for wrong.
 
@@ -42,7 +35,7 @@ You can also try from a different device (Android, iOS, iPadOS) with the Google 
 
 The setup code can be hard to see, I've read about people mistaking a C for a G for instance. It's worth double checking that you got it right.
 
-### The Wi-Fi icon is gone from the Google Home app
+### Google Home - The Wi-Fi icon is gone from the Google Home app
 
 Make sure you're logged into the Google Home app with the Google account that set up the Nest Wifi units initially, or with a Google account that has access to the Google Home home where the Nest Wifi units were added to:
 
@@ -226,6 +219,13 @@ Private IP Address (Mac randomization): Disable.
 
 * <https://support.apple.com/en-us/guide/security/secb9cb3140c/web>
 * <https://support.apple.com/en-us/HT211227>
+
+### Wireless - Why do clients not connect to the closest Nest Wifi unit?
+
+It's the client device that decides what access point to connect to, as these replies explains more in depth:
+
+* 2023-12-18: <https://www.googlenestcommunity.com/t5/Nest-Wifi/Google-wifi-units-connect-worst-wifi-point/m-p/564782/highlight/true#M49858>
+* 2023-12-14: <https://www.googlenestcommunity.com/t5/Nest-Wifi/Nest-Wifi-Set-a-Dedicated-Point/m-p/562259#M49820>
 
 ### Mesh path selection
 
@@ -465,15 +465,13 @@ Be aware that Nest Wifi units are made for different countries/regions in order 
 
 ### MAC randomization and Family Wi-Fi
 
-This is due to a privacy related feature of newer OSes (Android, iOS, Windows) known as MAC randomization, which makes it look like a new/different device connects to your Nest Wifi.
-
-Both the Family Wi-Fi/parental control and the pausing functionality has been broken by design ever since MAC randomization became a thing years ago. More on MAC randomization from:
+Both the Family Wi-Fi/parental control and the pausing functionality has been broken by design ever since MAC randomization became a thing years ago. This is a privacy feature included in OS-es (Android, iOS, MacOS, Windows), which makes it look like a new/different device connects to your Nest Wifi. More on MAC randomization from:
 
 * Apple: [1] <https://support.apple.com/en-us/guide/security/secb9cb3140c/web>, [2] <https://support.apple.com/en-us/HT211227>
 * Google / Android: <https://source.android.com/docs/core/connect/wifi-mac-randomization-behavior>
 * Microsoft Windows: <https://support.microsoft.com/en-us/windows/ac58de34-35fc-31ff-c650-823fc48eb1bc>
 
-You could look into controlling access on a different level, for instance the device itself. With products like:
+Don't rely on the family Wi-Fi feature of Nest Wifi, and don't wait for Google to fix it. Instead you should look into controlling access on a different level, for instance the device itself, with products like:
 
 * Apple -> Family Sharing -> Screen time: <https://www.apple.com/family-sharing>
 * Google Family Link: <https://families.google/familylink>
@@ -481,9 +479,13 @@ You could look into controlling access on a different level, for instance the de
 
 MAC randomization aside, if you have temporary/recent problems with parental control and/or pausing of devices, I've read that factory reset and set the whole network up again from scratch could fix strange problems with pausing and unpausing devices. Reuse the network name (SSID) and password, then devices should reconnect automagically.
 
+### Hardware - Can I buy a replacement power adapter from Google?
+
+No you can't. See [power adapter specifications](power-adapter-specs.md) for more info.
+
 ## Frequent issues
 
-### Network appears as offline
+### Google Home - Network appears as offline
 
 This is an issue many have been experiencing lately. Based on previous threads it seems to be related to IPv6 in Nest Wifi, but I don't know for sure what causes it. Hopefully we'll have a firmware update that fixes it soon, but no word on that from Google yet.
 
@@ -500,7 +502,7 @@ Other relevant things to check:
 * If on iPhone, make sure the Google Home app has been granted permission for "local network support" ( <https://support.google.com/chromecast/answer/7172427?hl=en> ).
 * Make sure you don't run double NAT: Any router in front of Nest Wifi should be in bridge mode, as Nest Wifi itself is a router with NAT, firewall and DHCP.
 
-### Unnamed duplicate devices in the device list
+### Google Home - Unnamed duplicate devices in the device list
 
 One reason for the ever growing list of unknown devices could be MAC randomization, a privacy feature built in to most OS-es to make devices harder to track across networks.
 
@@ -514,7 +516,7 @@ It can help to make sure this is disabled for all devices connected to your Nest
 
 ### 2.4GHz network for IoT devices
 
-How to provide feature requests to Google: [Feature requests](#feature-requests).
+How to provide feature requests to Google: [How can I send feedback to Google?](#how-can-i-send-feedback-to-google).
 
 That being said; doing something to make it easier to use 2.4GHz only devices with Nest Wifi is probably _the_ most requested feature, but Google shows great resilliency against doing anything about it.
 
