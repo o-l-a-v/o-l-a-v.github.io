@@ -11,6 +11,12 @@ toc_max_heading_level: 3
 
 ## Intro
 
+:::note
+
+Do you got feedback, something to add, or have I made a mistake? Feel free to create a GitHub issue over at <https://github.com/o-l-a-v/o-l-a-v.github.io>. 😊
+
+:::
+
 After answerering hundreds of questions in the Google Community forums, I've noticed a lot of the questions are the same. I created and maintained a F.A.Q. for myself which I used to answer these commond questions.
 
 Then I thought it'd be much better to just store those answers here instead, making them available to everyone and easy to refer to.
