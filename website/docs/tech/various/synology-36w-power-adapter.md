@@ -1,5 +1,5 @@
 ---
-title: Power plug barrel size of 36W power adapter for DS120j, DS119j, DS118, DS116, DS115, DS115j, VS960HD, VS360HD, MR2200ac
+title: Synology - Power plug barrel size of 36W power adapter for DS120j, DS119j, DS118, DS116, DS115, DS115j, VS960HD, VS360HD, MR2200ac
 keywords:
   - specifications
   - specs

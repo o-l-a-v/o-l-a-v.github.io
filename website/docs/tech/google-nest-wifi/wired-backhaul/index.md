@@ -1,9 +1,15 @@
 ---
-title: Wired backhaul
+title: Wired backhaul diagrams
 keywords:
   - google wifi
   - nest wifi
 ---
+
+:::note
+
+Do you got feedback, something to add, or have I made a mistake? Feel free to create a GitHub issue over at <https://github.com/o-l-a-v/o-l-a-v.github.io>. 😊
+
+:::
 
 ## About
 

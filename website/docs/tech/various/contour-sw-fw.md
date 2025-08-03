@@ -1,5 +1,5 @@
 ---
-title: Contour Action Cameras software and firmware
+title: Contour - Contour Action Cameras software and firmware
 ---
 
 :::info
