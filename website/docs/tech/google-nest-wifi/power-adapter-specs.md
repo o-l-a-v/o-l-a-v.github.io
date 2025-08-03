@@ -6,7 +6,9 @@ keywords:
 ---
 
 :::info
+
 Originally posted at Reddit 2023-04-22: <https://www.reddit.com/r/GoogleWiFi/comments/12v0bm8>.
+
 :::
 
 ## Intro

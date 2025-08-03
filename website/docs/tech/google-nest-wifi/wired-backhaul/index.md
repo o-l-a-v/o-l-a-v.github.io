@@ -5,13 +5,13 @@ keywords:
   - nest wifi
 ---
 
-## About
-
 :::note
 
 Do you got feedback, something to add, or have I made a mistake? Feel free to create a GitHub issue over at <https://github.com/o-l-a-v/o-l-a-v.github.io>. 😊
 
 :::
+
+## About
 
 Here are some diagrams I've made to show how one should do wired backhaul with Google / Nest Wifi. The goal was to show it as simple as possible, with the audience being community users at [googlenestcommunity.com](https://www.googlenestcommunity.com/t5/Nest-Wifi/bd-p/Nest-Wifi).
 

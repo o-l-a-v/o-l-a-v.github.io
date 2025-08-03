@@ -1,5 +1,5 @@
 ---
-title: Flash nVidia Shield Android TV Pro 500gb with ADB and Fastboot
+title: nVidia - Flash nVidia Shield Android TV Pro 500gb with ADB and Fastboot
 ---
 
 ## Prerequisites

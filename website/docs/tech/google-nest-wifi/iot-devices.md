@@ -5,6 +5,12 @@ keywords:
   - 2.4
 ---
 
+:::note
+
+Do you got feedback, something to add, or have I made a mistake? Feel free to create a GitHub issue over at <https://github.com/o-l-a-v/o-l-a-v.github.io>. 😊
+
+:::
+
 ## Precaution
 
 Google Wifi, Nest Wifi and Nest Wifi Pro combines all bands into one single SSID, and there are no settings available to us to change that. Thus you can't set SSIDs per band (2.4GHz for instance). More about that here:
