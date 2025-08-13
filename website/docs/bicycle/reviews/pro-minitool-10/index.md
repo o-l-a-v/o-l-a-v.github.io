@@ -20,8 +20,8 @@ Avoid. It's cheap, flimsy, and the metal is too soft.
 ### Cons
 
 * Cheap.
-* The body made of "durable resin" is just soft, flimsy plastic.
-* The metal is too soft, the philips screwdriver got twisted early on.
+* The body made of "glassfibre reinforced resin" is just soft, flimsy plastic, which makes the whole tool flex a lot.
+* The tools made of "robust and durable steel, which has also been coated with a protective layer of chrome" is too soft, the philips PH2 screwdriver got twisted early on.
 
 ## Metadata
 
