@@ -1,16 +1,16 @@
 name: Ensure changed files follows EditorConfig settings
 
-run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
+run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
 
 on:
   pull_request:
     paths:
-      - '**.json'
-      - '**.jsonc'
-      - '**.md'
-      - '**.ps1'
-      - '**.yaml'
-      - '**.yml'
+      - "**.json"
+      - "**.jsonc"
+      - "**.md"
+      - "**.ps1"
+      - "**.yaml"
+      - "**.yml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -28,12 +28,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           persist-credentials: false
       - name: 🔍 Get changed files
         id: filter
-        uses: dorny/paths-filter@v3
+        uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
         with:
           filters: |
             changed:
