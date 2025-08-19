@@ -62,7 +62,7 @@ jobs:
         with:
           persist-credentials: false
       - name: ⬇️ Install EditorConfig-Checker
-        run: go install github.com/editorconfig-checker/editorconfig-checker/v3/cmd/editorconfig-checker@ef081193195be5f2808fe560b36cfcc02b96548b // v3.4.0
+        run: go install github.com/editorconfig-checker/editorconfig-checker/v3/cmd/editorconfig-checker@latest
       - name: 🔍 Run EditorConfig-Checker
         run: |
           /home/runner/go/bin/editorconfig-checker -format github-actions \
