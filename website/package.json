@@ -35,7 +35,7 @@
     "yarn": ">=4 <5"
   },
   "name": "docs",
-  "packageManager": "yarn@4.10.0+sha512.8dd111dbb1658cf17089636e5bf490795958158755f36cb75c5a2db0bda6be4d84b95447753627f3330d1457cb6f7e8c1e466eaed959073c82be0242c2cd41e7",
+  "packageManager": "yarn@4.10.2+sha512.0b0e54ad5381f0a35184957bd3ea44e37f5a4fb1960b903b0fb9a3c7c2c009190455c41ef2a1977b1dbd3b72c5f152da696e9c52e2bc78a011b6adea8ee73ba3",
   "private": true,
   "resolutions": {
     "webpack-dev-server": "^5.0.0"
