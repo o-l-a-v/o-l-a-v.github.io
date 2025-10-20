@@ -1,4 +1,4 @@
-name: Ensure changed files follows EditorConfig settings
+name: Ensure changed files follow EditorConfig settings
 
 run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
 
