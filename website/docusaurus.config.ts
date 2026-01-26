@@ -21,8 +21,8 @@ const config: Config = {
   // Behavior
   onBrokenAnchors: 'throw',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'warn',
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -39,7 +39,10 @@ const config: Config = {
   },
 
   markdown: {
-    format: 'detect'
+    format: 'detect',
+    hooks: {
+      onBrokenMarkdownLinks: 'throw'
+    }
   },
 
   presets: [
