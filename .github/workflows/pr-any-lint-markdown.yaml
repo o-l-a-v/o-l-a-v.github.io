@@ -34,10 +34,11 @@ jobs:
             rumdlconf:
               - added|modified: '.rumdl.toml'
           list-files: escape
-      - name: ⚙️ Install rumdl with brew
+      - name: ⚙️ Install rumdl with brew and add to PATH
         shell: bash
         run: |
           eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          echo "$(brew --prefix)/bin" >> $GITHUB_PATH
           brew install rumdl
       - name: 🔍 Lint changed markdown files with rumdl
         if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
