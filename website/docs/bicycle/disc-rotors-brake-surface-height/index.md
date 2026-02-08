@@ -12,7 +12,7 @@ Is a 160mm disc brake rotor a 160mm disc brake rotor? No, it's not. Disc brakes 
 
 ![img](./img/shimano-pad-b05s-measurements.jpg "Example measurements of a Shimano B05S equivalent disc brake pad")
 
-Why is it so hard to find this measurement though? I first came aware of this when I bought a Shimano  SM-RT66 rotor for my commuter bike with Shimano BR-M355 calipers. I noticed that the brake surface height on the new rotors seemed a bit narrow vs. the height of the braking surface of my disc brake pads (Shimano B05S).
+Why is it so hard to find this measurement though? I first came aware of this when I bought a Shimano SM-RT66 rotor for my commuter bike with Shimano BR-M355 calipers. I noticed that the brake surface height on the new rotors seemed a bit narrow vs. the height of the braking surface of my disc brake pads (Shimano B05S).
 
 I then became aware of the Shimano concept of "wide" and "narrow" disc brakes and rotors.
 

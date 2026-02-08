@@ -1,4 +1,4 @@
-name: Lint markdown with mardownlint-cli2
+name: Lint markdown with rumdl
 
 run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
 
@@ -6,6 +6,7 @@ on:
   pull_request:
     paths:
       - "**.md"
+      - ".rumdl.toml"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -13,7 +14,7 @@ concurrency:
 
 jobs:
   lint-markdown:
-    name: Run markdownlint-cli2
+    name: Run rumdl
     permissions:
       contents: read
       pull-requests: read
@@ -30,9 +31,20 @@ jobs:
           filters: |
             markdown:
               - added|modified: '**.md'
+            rumdlconf:
+              - added|modified: '.rumdl.toml'
           list-files: escape
-      - name: 🔍 Lint with markdownlint-cli2
-        if: steps.filter.outputs.markdown == 'true'
-        uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265 # v19.1.0
-        with:
-          globs: ${{ steps.filter.outputs.markdown_files }}
+      - name: ⚙️ Install rumdl with brew and add to PATH
+        shell: bash
+        run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          echo "$(brew --prefix)/bin" >> $GITHUB_PATH
+          brew install rumdl
+      - name: 🔍 Lint changed markdown files with rumdl
+        if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
+        shell: bash
+        run: rumdl check ${{ steps.filter.outputs.markdown_files }}
+      - name: 🔍 Lint all markdown files with rumdl when ".rumdl.toml" is updated
+        if: steps.filter.outputs.rumdlconf == 'true'
+        shell: bash
+        run: rumdl check .
