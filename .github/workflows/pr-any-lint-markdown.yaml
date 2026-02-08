@@ -1,4 +1,4 @@
-name: Lint markdown with mardownlint-cli2
+name: Lint markdown with rumdl
 
 run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
 
@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   lint-markdown:
-    name: Run markdownlint-cli2
+    name: Run rumdl
     permissions:
       contents: read
       pull-requests: read
@@ -31,8 +31,8 @@ jobs:
             markdown:
               - added|modified: '**.md'
           list-files: escape
-      - name: 🔍 Lint with markdownlint-cli2
+      - name: 🔍 Lint with rumdl
         if: steps.filter.outputs.markdown == 'true'
-        uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265 # v19.1.0
+        uses: rvben/rumdl@079e7a4b1315ae2d6070c0816c688ff526689815 # v0.1.15
         with:
-          globs: ${{ steps.filter.outputs.markdown_files }}
+          path: ${{ steps.filter.outputs.markdown_files }}
