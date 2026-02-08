@@ -45,3 +45,9 @@ jobs:
         uses: rvben/rumdl@079e7a4b1315ae2d6070c0816c688ff526689815 # v0.1.15
         with:
           version: 0.1.15
+      - name: 🔍 Lint changed markdown files with rumdl
+        # if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
+        shell: bash
+        run: |
+          brew install rumdl
+          rumdl check ${{ steps.filter.outputs.markdown_files }}
