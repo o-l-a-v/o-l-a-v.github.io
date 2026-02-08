@@ -15,7 +15,9 @@
 ## New technology
 
 * [x] Change markdown linter to rumdl.
-* [ ] Change from Node.js to Bun.
+* [ ] Change from Node.js and Yarn to Bun.
+  * Builds Docusaurus with Rspack since v1.3.4: <https://github.com/oven-sh/bun/issues/3426#issuecomment-3621970637>
+  * Would like dedupe functionality first: <https://github.com/oven-sh/bun/issues/1343>
 
 ## Content
 
