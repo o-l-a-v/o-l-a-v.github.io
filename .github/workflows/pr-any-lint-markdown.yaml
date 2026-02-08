@@ -31,6 +31,8 @@ jobs:
           filters: |
             markdown:
               - added|modified: '**.md'
+            rumdlconf:
+              - added|modified: '.rumdl.toml'
           list-files: escape
       - name: 🔍 Lint with rumdl
         # if: steps.filter.outputs.markdown == 'true'
