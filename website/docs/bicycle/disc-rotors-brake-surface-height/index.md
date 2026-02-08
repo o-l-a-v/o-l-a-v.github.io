@@ -8,7 +8,7 @@ Originally posted at Reddit 2023-08-20: <https://www.reddit.com/r/bicycling/comm
 
 ## Background
 
-Is a 160mm  disc brake rotor a 160mm disc brake rotor? No, it's not. Disc brakes have different sizes on the width between the brake pads (= disc brake rotor thickness) and brake pad braking surface height (= disc brake rotor braking surface height) too.
+Is a 160mm disc brake rotor a 160mm disc brake rotor? No, it's not. Disc brakes have different sizes on the width between the brake pads (= disc brake rotor thickness) and brake pad braking surface height (= disc brake rotor braking surface height) too.
 
 ![img](./img/shimano-pad-b05s-measurements.jpg "Example measurements of a Shimano B05S equivalent disc brake pad")
 
