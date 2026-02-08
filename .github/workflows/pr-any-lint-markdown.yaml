@@ -33,7 +33,7 @@ jobs:
       #         - added|modified: '**.md'
       #     list-files: escape
       - name: 🔍 Lint with rumdl
-        if: steps.filter.outputs.markdown == 'true'
+        # if: steps.filter.outputs.markdown == 'true'
         uses: rvben/rumdl@079e7a4b1315ae2d6070c0816c688ff526689815 # v0.1.15
         with:
           # path: ${{ steps.filter.outputs.markdown_files }}
