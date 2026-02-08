@@ -34,9 +34,14 @@ jobs:
             rumdlconf:
               - added|modified: '.rumdl.toml'
           list-files: escape
-      - name: 🔍 Lint with rumdl
-        # if: steps.filter.outputs.markdown == 'true'
+      - name: 🔍 Lint changed markdown files with rumdl
+        if: false # if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
         uses: rvben/rumdl@079e7a4b1315ae2d6070c0816c688ff526689815 # v0.1.15
         with:
           # path: ${{ steps.filter.outputs.markdown_files }}
+          version: 0.1.15
+      - name: 🔍 Lint all markdown files with rumdl (because ".rumdl.toml" changed)
+        if: steps.filter.outputs.rumdlconf == 'true'
+        uses: rvben/rumdl@079e7a4b1315ae2d6070c0816c688ff526689815 # v0.1.15
+        with:
           version: 0.1.15
