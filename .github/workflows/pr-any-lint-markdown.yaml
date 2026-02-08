@@ -49,5 +49,6 @@ jobs:
         # if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
         shell: bash
         run: |
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
           brew install rumdl
           rumdl check ${{ steps.filter.outputs.markdown_files }}
