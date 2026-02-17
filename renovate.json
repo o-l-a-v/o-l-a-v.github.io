@@ -11,38 +11,6 @@
   ],
   "packageRules": [
     {
-      "description": "Minimum release age for NPM packages.",
-      "matchDatasources": [
-        "npm"
-      ],
-      "minimumReleaseAge": "2 days"
-    },
-    {
-      "description": "Minimum release age for GitHub Actions.",
-      "matchManagers": [
-        "github-actions"
-      ],
-      "minimumReleaseAge": "2 days"
-    },
-    {
-      "description": "Group React and React-DOM together to prevent mismatches.",
-      "groupName": "react packages",
-      "matchPackageNames": [
-        "react",
-        "react-dom"
-      ]
-    },
-    {
-      "description": "Group common linting/formatting tools.",
-      "groupName": "linters and formatters",
-      "matchPackageNames": [
-        "prettier",
-        "eslint",
-        "@typescript-eslint/{/,}**",
-        "eslint-{/,}**"
-      ]
-    },
-    {
       "automerge": true,
       "description": "Automerge minor and patch updates for devDependencies if CI passes.",
       "matchDepTypes": [
@@ -73,11 +41,67 @@
     },
     {
       "automerge": false,
-      "description": "Require manual approval for major Node.js/Yarn engine updates.",
+      "description": "Group Node.js runtime updates (.node-version, engines, and packageManager)",
+      "groupName": "node and yarn runtime",
       "matchDepTypes": [
         "engines",
-        "packageManager"
+        "packageManager",
+        "required-node"
+      ],
+      "matchManagers": [
+        "nvm",
+        "npm"
+      ],
+      "matchPackageNames": [
+        "node",
+        "yarn"
       ]
+    },
+    {
+      "description": "Group common linting/formatting tools.",
+      "groupName": "linters and formatters",
+      "matchPackageNames": [
+        "prettier",
+        "eslint",
+        "@typescript-eslint/{/,}**",
+        "eslint-{/,}**"
+      ]
+    },
+    {
+      "description": "Group React and React-DOM together to prevent mismatches.",
+      "groupName": "react packages",
+      "matchPackageNames": [
+        "react",
+        "react-dom"
+      ]
+    },
+    {
+      "description": "Minimum release age for NPM packages.",
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "2 days"
+    },
+    {
+      "description": "Minimum release age for GitHub Actions.",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "minimumReleaseAge": "2 days"
+    },
+    {
+      "description": "Version pinning, GitHub Actions: Skip for Azure (Microsoft), Cloudflare, GitHub owned actions.",
+      "groupName": "official github actions",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackagePrefixes": [
+        "actions/",
+        "azure/",
+        "cloudflare/"
+      ],
+      "pinDigests": false,
+      "separateMajorMinor": false
     }
   ],
   "schedule": [
