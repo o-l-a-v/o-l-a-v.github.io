@@ -57,6 +57,13 @@
       ]
     },
     {
+      "automerge": true,
+      "description": "Automerge lock file maintenance.",
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ]
+    },
+    {
       "automerge": false,
       "description": "Require manual approval for major Node.js/Yarn engine updates.",
       "matchDepTypes": [
