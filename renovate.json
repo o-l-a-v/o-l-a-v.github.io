@@ -29,11 +29,9 @@
       "groupName": "linters and formatters",
       "matchPackageNames": [
         "prettier",
-        "eslint"
-      ],
-      "matchPackagePrefixes": [
-        "@typescript-eslint/",
-        "eslint-"
+        "eslint",
+        "@typescript-eslint/{/,}**",
+        "eslint-{/,}**"
       ]
     },
     {
