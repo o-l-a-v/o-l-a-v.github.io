@@ -1,0 +1,76 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "helpers:pinGitHubActionDigests",
+    "group:docusaurusMonorepo",
+    "group:definitelyTyped"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "npm"
+      ],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Group React and React-DOM together to prevent mismatches.",
+      "groupName": "react packages",
+      "matchPackageNames": [
+        "react",
+        "react-dom"
+      ]
+    },
+    {
+      "description": "Group common linting/formatting tools.",
+      "groupName": "linters and formatters",
+      "matchPackageNames": [
+        "prettier",
+        "eslint"
+      ],
+      "matchPackagePrefixes": [
+        "@typescript-eslint/",
+        "eslint-"
+      ]
+    },
+    {
+      "automerge": true,
+      "description": "Automerge minor and patch updates for devDependencies if CI passes.",
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "automerge": true,
+      "description": "Automerge minor and patch updates for GitHub Actions.",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "automerge": false,
+      "description": "Require manual approval for major Node.js/Yarn engine updates.",
+      "matchDepTypes": [
+        "engines",
+        "packageManager"
+      ]
+    }
+  ],
+  "schedule": [
+    "on Friday",
+    "every weekend"
+  ],
+  "semanticCommits": "enabled",
+  "timezone": "Europe/Oslo"
+}
