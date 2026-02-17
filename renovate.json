@@ -95,13 +95,13 @@
       "matchManagers": [
         "github-actions"
       ],
-      "matchPackagePrefixes": [
-        "actions/",
-        "azure/",
-        "cloudflare/"
-      ],
       "pinDigests": false,
-      "separateMajorMinor": false
+      "separateMajorMinor": false,
+      "matchPackageNames": [
+        "actions/{/,}**",
+        "azure/{/,}**",
+        "cloudflare/{/,}**"
+      ]
     }
   ],
   "schedule": [
