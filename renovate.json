@@ -25,6 +25,20 @@
       "minimumReleaseAge": "2 days"
     },
     {
+      "description": "Version pinning, GitHub Actions: Skip for Azure (Microsoft), Cloudflare, GitHub owned actions.",
+      "groupName": "official github actions",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchPackagePrefixes": [
+        "actions/",
+        "azure/",
+        "cloudflare/"
+      ],
+      "pinDigests": false,
+      "separateMajorMinor": false
+    },
+    {
       "description": "Group React and React-DOM together to prevent mismatches.",
       "groupName": "react packages",
       "matchPackageNames": [
