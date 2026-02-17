@@ -11,10 +11,18 @@
   ],
   "packageRules": [
     {
+      "description": "Minimum release age for NPM packages.",
       "matchDatasources": [
         "npm"
       ],
-      "minimumReleaseAge": "3 days"
+      "minimumReleaseAge": "2 days"
+    },
+    {
+      "description": "Minimum release age for GitHub Actions.",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "minimumReleaseAge": "2 days"
     },
     {
       "description": "Group React and React-DOM together to prevent mismatches.",
