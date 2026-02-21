@@ -18,7 +18,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: read
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v6
@@ -34,17 +34,17 @@ jobs:
             rumdlconf:
               - added|modified: '.rumdl.toml'
           list-files: escape
-      - name: ⚙️ Install rumdl with brew and add to PATH
-        shell: bash
-        run: |
-          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-          echo "$(brew --prefix)/bin" >> $GITHUB_PATH
-          brew install rumdl
+      - name: ⬇️ Install the latest version of uv
+        if: steps.filter.outputs.markdown == 'true' || steps.filter.outputs.rumdlconf == 'true'
+        uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0
+        with:
+          cache-dependency-glob: ""
+          enable-cache: true
       - name: 🔍 Lint changed markdown files with rumdl
         if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
         shell: bash
-        run: rumdl check ${{ steps.filter.outputs.markdown_files }}
+        run: uvx rumdl check ${{ steps.filter.outputs.markdown_files }}
       - name: 🔍 Lint all markdown files with rumdl when ".rumdl.toml" is updated
         if: steps.filter.outputs.rumdlconf == 'true'
         shell: bash
-        run: rumdl check .
+        run: uvx rumdl check .
