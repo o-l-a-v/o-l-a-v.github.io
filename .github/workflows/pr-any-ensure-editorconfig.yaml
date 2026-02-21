@@ -53,7 +53,7 @@ jobs:
     permissions:
       contents: read
       pull-requests: read
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: 🪲 Debug
         run: echo ${{ needs.changes.outputs.files }}
