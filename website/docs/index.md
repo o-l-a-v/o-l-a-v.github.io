@@ -8,6 +8,7 @@ slug: /
 tags:
   - index
   - home
+  - welcome
 ---
 
 :::info
