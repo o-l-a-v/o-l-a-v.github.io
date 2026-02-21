@@ -34,6 +34,8 @@ jobs:
       - name: ⬇️ Install the latest version of uv
         if: steps.filter.outputs.workflows == 'true'
         uses: astral-sh/setup-uv@eac588ad8def6316056a12d4907a9d4d84ff7a3b # v7.3.0
+        with:
+          enable-cache: true
       - name: 🔍 Run zizmor
         if: steps.filter.outputs.workflows == 'true'
         run: |
