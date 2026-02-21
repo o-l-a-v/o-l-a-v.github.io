@@ -19,7 +19,7 @@ jobs:
         working-directory: ./website
     permissions:
       contents: read
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
         uses: actions/checkout@v6
