@@ -2,7 +2,7 @@
 # Schema: https://raw.githubusercontent.com/rvben/rumdl/main/rumdl.schema.json
 
 [global]
-disable = ["MD041", "MD013", "MD025"]
+disable = ["MD013", "MD025", "MD041"]
 
 # MD003 / heading-style - Heading style should be consistent
 [MD003]
@@ -15,6 +15,10 @@ style = "asterisk"
 # MD029 / ol-prefix - Use consistent numbers for ordered lists
 [MD029]
 style = "one-or-ordered"
+
+# MD033 / no-inline-html - No HTML tags
+[MD033]
+allowed-elements = ["details", "summary"]
 
 # MD040 / fenced-code-language - Code blocks should have a language specified
 [MD040]
