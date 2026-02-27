@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - name: ⬇️ Download build artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: build-artifact
           path: build-artifact
