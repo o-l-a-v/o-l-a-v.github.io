@@ -55,6 +55,7 @@ jobs:
           path: website/build/
   deploy-cloudflare:
     name: Deploy to Cloudflare Pages
+    environment: deploy
     needs: build
     permissions:
       contents: read
