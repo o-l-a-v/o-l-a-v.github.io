@@ -34,7 +34,7 @@ const config: Config = {
 
   // Use Docusaurus Faster with Rspack etc.
   future: {
-    experimental_faster: true,
+    faster: true,
     v4: true
   },
 
