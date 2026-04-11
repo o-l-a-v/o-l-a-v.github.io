@@ -55,6 +55,7 @@ jobs:
           path: website/build/
   deploy-cloudflare:
     name: Deploy to Cloudflare Pages
+    environment: deploy
     needs: build
     permissions:
       contents: read
@@ -85,6 +86,6 @@ jobs:
     runs-on: ubuntu-slim
     steps:
       - name: 🚢 Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           artifact_name: build-artifact-ghp
