@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@docusaurus/core": "3.10.0",
-    "@docusaurus/faster": "^3.9.2",
+    "@docusaurus/faster": "^3.10.0",
     "@docusaurus/preset-classic": "3.10.0",
     "@mdx-js/react": "^3.1.1",
     "@types/react": "19.2.14",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.0",
@@ -38,7 +38,8 @@
   "packageManager": "yarn@4.13.0+sha512.5c20ba010c99815433e5c8453112165e673f1c7948d8d2b267f4b5e52097538658388ebc9f9580656d9b75c5cc996f990f611f99304a2197d4c56d21eea370e7",
   "private": true,
   "resolutions": {
-    "schema-utils": "^4.3.3"
+    "schema-utils": "^4.3.3",
+    "serialize-javascript": "^7.0.3"
   },
   "scripts": {
     "build": "docusaurus build",
