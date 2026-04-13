@@ -259,7 +259,7 @@ Both seals and threads.
 
 ### 18. Mount the air top cap
 
-Tighten it to **24-25 newtonmeter**
+Tighten it to **24-25 newtonmeter**.
 
 ![mount-air-top-cap](./img/DSC01571.jpg)
 
