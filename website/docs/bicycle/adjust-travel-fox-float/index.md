@@ -77,9 +77,7 @@ Example pictures taken from Fox Tech Center.
 
 ### I need help with a different Fox fork
 
-Fox has made a whole lot of information available for us customers. You can get it all here:
-
-* <https://tech.ridefox.com/?m=bike&ref=lnav_help&t=manuals>
+Fox has made a whole lot of information available to customers directly. Links can be found in the [resources](#resources) section.
 
 ## Requirements
 
@@ -283,6 +281,7 @@ Step [1 Remove fork from the bicycle](#1-remove-fork-from-the-bicycle) in revers
 
 * Fox Tech Center: <https://tech.ridefox.com/bike>
   * Service procedures: <https://tech.ridefox.com/bike/list/service-procedures>
-  * 831 32 manual: <https://tech.ridefox.com/fox_tech_center/owners_manuals/011/Content/Forks/32MM/F120RLC831.html>
+* From the old Fox Tech Center:
+  * Fox 831 32 FIT manual: <https://tech.ridefox.com/fox_tech_center/owners_manuals/011/Content/Forks/32MM/F120RLC831.html>
 * [YouTube: How to lower a 36 fox float RC2](https://www.youtube.com/watch?v=1VelBrbVfLY)
 * [YouTube: How to Service a Fox Float Fork](https://www.youtube.com/watch?v=eh-sIrnC8xs)
