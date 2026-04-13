@@ -2,6 +2,10 @@
 title: Adjust travel on Fox 831 and Float 32-36mm forks
 keywords:
   - Fox Racing Shox
+  - lower
+  - lowering
+  - shorten
+  - shortening
 ---
 
 :::info
@@ -19,7 +23,8 @@ This was originally posted at Pinkbike at 2012-10-09: <https://www.pinkbike.com/
 ## Background
 
 Lowering Fox Float forks is really easy, but getting the needed information on how to do it, is hard. I wanted to lower my Fox 831 32mm from 100mm to 80mm, and wanted to document the process while I did it. The result is a guide which I hope others might enjoy for similar purposes.
-Here is my before and after shots, for inspiration:
+
+Here are my before and after shots, for inspiration:
 
 * Before
   ![before](./img/Before.jpg)
@@ -33,22 +38,33 @@ Here is my before and after shots, for inspiration:
 This guide should work for all Fox Float forks, including:
 
 * Fox 831 (32mm, 34mm, 36mm)
-* Fox Float 32mm, 34,mm, 36mm, for 26", 27.5", 29.5" wheels.
+* Fox Float 32mm, 34mm, 36mm, for 26", 27.5", 29.5" wheels.
 
 ### Why should I change the travel of my fork?
 
-* If you make it shorter, the front of the bike will get lower. This will change the geometry of the bike.
+Shortening the length of the fork will effect the geometry of the bike. Making the forks longer will do the opposite.
 
-* **Shorter travel/ shorter total length:** Lower bb height and steeper angle of the head tube. Less travel. Need more air pressure to not bottom out.
-* **More travel / longer total length:** The opposite.
+Geometry changes:
+
+* Lower BB (bottom bracket) / more BB drop.
+* Steeper head tube angle.
+* Longer reach, shorter stack.
+
+Practical consequences:
+
+* Less available suspension travel: Might need more air pressure to not bottom out.
+* Lower BB: More likely to hit things with your cranks and pedals.
+* Lower handlebars: Less upright position.
+* Steeper head tube angle: More responsive and twitchy, less stable.
 
 ### How much can I change the travel?
 
-The fork can be lowered from the given max travel on the fork, and theoreticly down to 0mm of travel (Which will leave the fork completely useless..)
+The fork can be lowered from the given max travel on the fork, and theoreticly down to 0mm of travel (Which will leave the fork completely useless..).
 
 ### How much spacers do I need to get the fork the height i want?
 
 If you want to lower it 20mm, you just use one 20mm spacer.
+
 If you want your fork 20mm higher, you just take out one 20mm spacer
 
 Example pictures taken from Fox Tech Center.
@@ -61,9 +77,7 @@ Example pictures taken from Fox Tech Center.
 
 ### I need help with a different Fox fork
 
-Fox has made a whole lot of information available for us customers. You can get it all here:
-
-* <https://tech.ridefox.com/?m=bike&ref=lnav_help&t=manuals>
+Fox has made a whole lot of information available to customers directly. Links can be found in the [resources](#resources) section.
 
 ## Requirements
 
@@ -73,30 +87,35 @@ Stuff you'll need:
 
 ### Tools
 
-* 24mm wrench or socket key for Fox 32 forks, 32mm wrench or socket key for Fox 36 forx.
-  * Adjustable wrench is _not_ recommended, the air top cap is made of soft aluminium.
-  * Dedicated flattened sockets for fork/suspension use is recommended.
+* 24mm wrench or socket key for Fox 32 forks, 32mm wrench or socket key for Fox 36 forks.
+  * An adjustable wrench is _not_ recommended, the air top cap is made of soft aluminium.
+  * A dedicated flattened sockets for fork/suspension use is recommended.
 * 10mm socket key.
-* Shock pump
-* Hex or torx keys (to remove the stem and headset)
-* Cups (to gather the oil)
-* Toilet paper
+* Shock pump.
+* Hex or torx keys (to remove the stem and headset).
+* Cups (to gather the oil).
+* Toilet paper.
 * Torque wrench, which measures newton meter (nm). Check ridefox tech sites to find recommended torque.
 * Measuring cup or syringe.
 
 ### Parts
 
-* Spacer (25mm Ø is used for 32mm, 34mm and 36mm.
+* Spacer (Ø25mm is used for 32mm, 34mm and 36mm.
 
 ![parts-spacer](./img/Spacers.png)
 
 ### Lubricant
 
-* Fox Float Fluid Anti-Fraction Lube (for the seals and top chamber, Fox says this is ESSENTIAL to prevent air leak)
-* Grease, lithium based (for nuts and threads)
-* Fork oil, Fox 10wt Green is recommended by Fox. You can reuse the old oil, but new oil is always better).
+* Fox Float Fluid Anti-Friction Lube (for the seals and top chamber, Fox says this is ESSENTIAL to prevent air leak).
+  * How you need depends on your fork, check Fox Service Procedures in the [resources](#resources) section.
+  * Fox 831 / Float 32 FIT needs 5mL/cc.
+* Grease, lithium based (for nuts and threads).
+* Fox Gold 20wt or Fox Green 10wt
+  * What type and how much depends on your fork, check Fox Service Procedures in the [resources](#resources) section.
+  * Fox 831 / Float 32 FIT needs 20ml/cc Fox Green 10wt.
+  * You can reuse the old oil, but new oil is always better).
 
-**How much oil + how hard the bolts need to be tightened, will be covered later!**
+**How much oil + how hard the bolts need to be tightened will be covered later!**
 
 ## Process
 
@@ -110,11 +129,15 @@ Remove stem, headset and front wheel from the fork
 
 ### 2. IMPORTANT: Let the air out
 
-If you fail this step something fatal WILL happen.
+:::danger
+
+If you skip this step you'll likely damage the forks and yourself.
+
+:::
 
 ![let-air-out](./img/DSC01546.jpg)
 
-### 3. Condence the fork
+### 3. Condense the fork
 
 ![condense-fork](./img/DSC01548.jpg)
 
@@ -141,19 +164,25 @@ CHILL: No oil will get out yet.
 
 If you don't have new oil: Keep it for later.
 
+:::warning
+
 IMPORTANT: The oil at the top differs from the oil at the bottom. Do not blend!
+
+:::
 
 ![remove-top-oil](./img/DSC01557.jpg)
 
 ### 7. Push bottom bolt
 
-Press the bottom bolt in to the fork, by tapping gently with a hammer. Let the oil drain
+Press the bottom bolt in to the fork by tapping it gently with a hammer.
+
+Let the oil drain out from the bottom afterwards.
 
 ![push-bottom-bolt](./img/DSC01558.jpg)
 
 ### 8. Get the assembly out
 
-Use something to press the whole thing from the bottom and out at the top. As soon as you can grab the top with your hands: Do so, and drag the whole thing out
+Use something to press the whole thing from the bottom and out at the top. As soon as you can grab the top with your hands: Do so, and drag the whole thing out.
 
 ![get-assembly-out](./img/DSC01559.jpg)
 
@@ -162,19 +191,24 @@ Use something to press the whole thing from the bottom and out at the top. As so
 You should've already decide how much you want to lower/rise your fork.
 
 * I want to go from 100mm to 80mm, so I use a 20mm spacer.
-* TIP: Measure the spacers just in case!
+
+:::tip
+
+TIP: Measure the spacers just in case!
+
+:::
 
 ![measure-spacer](./img/DSC01560.jpg)
 
 ### 10. Make room for more spacers
 
-Slide the old spacers down to get space for the new one(s)
+Slide the old spacers down to get space for the new one(s).
 
-* If you are going to extend the travel of your fork; remove spacers and jump to step 13.
+* If you are going to extend the travel of your fork; remove spacers and jump to step 12.
 
 ![make-room-for-spacers](./img/DSC01561.jpg)
 
-### 11. Get the spacer in place
+### 11. Put the spacer in place
 
 ![spacer-before](./img/DSC01562.jpg)
 
@@ -182,25 +216,24 @@ It should look like this:
 
 ![spacer-after](./img/DSC01563.jpg)
 
-### 12. Prepare Foxfloat fluid
+### 12. Prepare Fox Float Fluid
 
-Take some float fluid in a small syringe. This is the easiest way to lubricate gaskets and stuff.
+Take some Fox Float Fluid in a small syringe. This is the easiest way to lubricate gaskets and stuff.
 
 ![prepare-float-fluid](./img/DSC01569.jpg)
 
 ### 13. Stick the whole thing back in
 
-Not so much that the bolt get through the whole at the bottom. Get some float fluid on gaskets, seals, and stuff
+Not so much that the bolt get through the whole at the bottom. Get some float fluid on gaskets, seals, and stuff.
 
 ![reinsert](./img/DSC01565.jpg)
 
-### 14. Get some oil in the bottom
+### 14. Fill oil through the bottom
 
-Fox recommends Fox 10wt green.
+Fox Gold 20wt or Fox Green 10wt.
 
-* **Fox Float 32/831:** 30ml/cc
-* **Fox Float 36 160mm:** 25ml/cc
-* **Fox Float 36 180mm** 40ml/cc
+* What type and how much depends on your fork, check Fox Service Procedures in the [resources](#resources) section.
+* Fox 831 / Float 32 FIT needs 20ml/cc Fox Green 10wt.
 
 ![fill-bottom](./img/DSC01566.jpg)
 
@@ -211,19 +244,22 @@ Press the whole thing further down, so the bolt gets out at the bottom. Grease t
 NB: The nut is made of aluminium, therefore it's very important that you don't over tighten it! Fox says **5.7 newtonmeter**.
 ![fasten-bottom-nut](./img/DSC01568.jpg)
 
-### 16. Get 5 ml/cc of Fox Fluid at the top
+### 16. Fill Fox Float Fluid to the top
+
+* How much you need depends depends on your fork, check Fox Service Procedures in the [resources](#resources) section.
+* Fox 831 / Float 32 FIT needs 5mL/cc.
 
 ![fill-top](./img/DSC01567.jpg)
 
-### 17. Lubricate the top cap with some Fox Fluid
+### 17. Lubricate the top cap with some Fox Float Fluid
 
-Both seals and threads
+Both seals and threads.
 
 ![lubricate-seals](./img/DSC01570.jpg)
 
 ### 18. Mount the air top cap
 
-Tighten it to **24-25 newtonmeter**
+Tighten it to **24-25 newtonmeter**.
 
 ![mount-air-top-cap](./img/DSC01571.jpg)
 
@@ -243,6 +279,9 @@ Step [1 Remove fork from the bicycle](#1-remove-fork-from-the-bicycle) in revers
 
 ## Resources
 
-* Fox Tech Center: <https://www.ridefox.com/fox17/help.php?m=bike>
+* Fox Tech Center: <https://tech.ridefox.com/bike>
+  * Service procedures: <https://tech.ridefox.com/bike/list/service-procedures>
+* From the old Fox Tech Center:
+  * Fox 831 32 FIT manual: <https://tech.ridefox.com/fox_tech_center/owners_manuals/011/Content/Forks/32MM/F120RLC831.html>
 * [YouTube: How to lower a 36 fox float RC2](https://www.youtube.com/watch?v=1VelBrbVfLY)
 * [YouTube: How to Service a Fox Float Fork](https://www.youtube.com/watch?v=eh-sIrnC8xs)
