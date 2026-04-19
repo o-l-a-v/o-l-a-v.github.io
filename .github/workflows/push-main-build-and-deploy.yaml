@@ -48,7 +48,7 @@ jobs:
           name: build-artifact
           path: website/build/
       - name: ⬆️ Upload build artifact specific for GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         id: artifact-ghp
         with:
           name: build-artifact-ghp
