@@ -1,16 +1,17 @@
+---
 name: Ensure changed files follow EditorConfig settings
 
-run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
-on:
+on:  # ryl disable-line rule:truthy
   pull_request:
     paths:
-      - "**.json"
-      - "**.jsonc"
-      - "**.md"
-      - "**.ps1"
-      - "**.yaml"
-      - "**.yml"
+      - '**.json'
+      - '**.jsonc'
+      - '**.md'
+      - '**.ps1'
+      - '**.yaml'
+      - '**.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -33,7 +34,7 @@ jobs:
           persist-credentials: false
       - name: 🔍 Get changed files
         id: filter
-        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4.0.1
+        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d  # v4.0.1
         with:
           filters: |
             changed:

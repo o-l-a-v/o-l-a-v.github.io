@@ -5,6 +5,9 @@
   "[powershell]": {
     "editor.tabSize": 4
   },
+  "[yaml]": {
+    "editor.defaultFormatter": "owenlamont.ryl"
+  },
   "editor.formatOnSave": true,
   "editor.indentSize": "tabSize",
   "editor.insertSpaces": true,

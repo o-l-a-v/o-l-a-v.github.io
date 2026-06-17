@@ -1,21 +1,21 @@
 ---
-name: Lint markdown with rumdl
+name: Lint YAML with ryl
 
 run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
 on:  # ryl disable-line rule:truthy
   pull_request:
     paths:
-      - '**.md'
-      - '**/*rumdl.toml'
+      - '**.yml'
+      - '**/*ryl.toml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  lint-markdown:
-    name: Run rumdl
+  lint-yaml:
+    name: Run ryl
     permissions:
       contents: read
       pull-requests: read
@@ -30,23 +30,24 @@ jobs:
         uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d  # v4.0.1
         with:
           filters: |
-            markdown:
-              - added|modified: '**.md'
-            rumdlconf:
-              - added|modified: '{.,}rumdl.toml'
-              - added|modified: '.config/{.,}rumdl.toml'
+            yaml:
+              - added|modified: '**.yml'
+              - added|modified: '**.yaml'
+            rylconf:
+              - added|modified: '{.,}ryl.toml'
+              - added|modified: '.config/{.,}ryl.toml'
           list-files: escape
       - name: ⬇️ Install the latest version of uv
-        if: steps.filter.outputs.markdown == 'true' || steps.filter.outputs.rumdlconf == 'true'
-        uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39  # v8.2.0
+        if: steps.filter.outputs.yaml == 'true' || steps.filter.outputs.rylconf == 'true'
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b  # v8.1.0
         with:
           cache-dependency-glob: ''
           enable-cache: true
-      - name: 🔍 Lint changed markdown files with rumdl
-        if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
+      - name: 🔍 Lint changed YAML files with ryl
+        if: steps.filter.outputs.yaml == 'true' && steps.filter.outputs.rylconf == 'false'
         shell: bash
-        run: uvx rumdl check ${{ steps.filter.outputs.markdown_files }}
-      - name: 🔍 Lint all markdown files with rumdl when ".rumdl.toml" is updated
-        if: steps.filter.outputs.rumdlconf == 'true'
+        run: uvx ryl ${{ steps.filter.outputs.markdown_files }}
+      - name: 🔍 Lint all YAML files with ryl when ".ryl.toml" is updated
+        if: steps.filter.outputs.rylconf == 'true'
         shell: bash
-        run: uvx rumdl check .
+        run: uvx ryl .

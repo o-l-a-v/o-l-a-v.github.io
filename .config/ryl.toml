@@ -1,0 +1,71 @@
+# ryl is a Rust reimplementation of yamllint
+# * yamllint documentation: <https://yamllint.readthedocs.io/en/stable/>
+# Schema: https://raw.githubusercontent.com/owenlamont/ryl/refs/heads/main/ryl.toml.schema.json
+#:schema https://raw.githubusercontent.com/owenlamont/ryl/refs/heads/main/ryl.toml.schema.json
+# $schema: https://raw.githubusercontent.com/owenlamont/ryl/refs/heads/main/ryl.toml.schema.json
+
+[rules]
+trailing-spaces = "enable"
+
+[rules.braces]
+level = "error"
+min-spaces-inside = 0
+max-spaces-inside = 0
+
+[rules.brackets]
+level = "error"
+min-spaces-inside = 0
+max-spaces-inside = 0
+
+[rules.colons]
+level = "error"
+max-spaces-before = 0
+max-spaces-after = 1
+
+[rules.commas]
+level = "error"
+max-spaces-before = 0
+min-spaces-after = 1
+max-spaces-after = 1
+
+[rules.comments]
+level = "error"
+ignore-shebangs = true
+min-spaces-from-content = 2
+require-starting-space = true
+
+[rules.document-start]
+level = "error"
+present = true
+
+[rules.empty-lines]
+level = "error"
+max = 2
+max-start = 0
+max-end = 1
+
+[rules.hyphens]
+level = "error"
+max-spaces-after = 1
+
+[rules.indentation]
+level = "error"
+spaces = 2
+indent-sequences = true
+
+[rules.line-length]
+level = "error"
+max = 150
+allow-non-breakable-words = true
+allow-non-breakable-inline-mappings = true
+
+[rules.quoted-strings]
+allow-double-quotes-for-escaping = true
+check-keys = true
+quote-type = "single"
+required = "only-when-needed"
+
+[rules.truthy]
+level = "error"
+allowed-values = ["false", "true"]
+check-keys = true
