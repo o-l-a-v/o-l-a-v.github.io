@@ -1,6 +1,7 @@
+---
 name: Build Docusaurus
 
-run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
 on:
   pull_request:
@@ -30,9 +31,9 @@ jobs:
       - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v6
         with:
-          cache: "yarn"
-          cache-dependency-path: "./website/yarn.lock"
-          node-version-file: "./website/.node-version"
+          cache: yarn
+          cache-dependency-path: ./website/yarn.lock
+          node-version-file: ./website/.node-version
       - name: 🧶 Yarn install
         run: yarn install --immutable
       - name: 🔨 Node.js build

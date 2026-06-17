@@ -1,12 +1,13 @@
+---
 name: Lint YAML with ryl
 
-run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
+run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
 on:
   pull_request:
     paths:
-      - "**.yml"
-      - "**/*ryl.toml"
+      - '**.yml'
+      - '**/*ryl.toml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -26,7 +27,7 @@ jobs:
           persist-credentials: false
       - name: 🔍 Get changed files
         id: filter
-        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4.0.1
+        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d  # v4.0.1
         with:
           filters: |
             yaml:
@@ -38,9 +39,9 @@ jobs:
           list-files: escape
       - name: ⬇️ Install the latest version of uv
         if: steps.filter.outputs.yaml == 'true' || steps.filter.outputs.rylconf == 'true'
-        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b  # v8.1.0
         with:
-          cache-dependency-glob: ""
+          cache-dependency-glob: ''
           enable-cache: true
       - name: 🔍 Lint changed YAML files with ryl
         if: steps.filter.outputs.yaml == 'true' && steps.filter.outputs.rylconf == 'false'

@@ -1,6 +1,7 @@
+---
 name: Deploy to Cloudflare Pages and GitHub Pages
 
-run-name: "${{ github.workflow }} by @${{ github.actor }}"
+run-name: ${{ github.workflow }} by @${{ github.actor }}
 
 on:
   push:
@@ -10,7 +11,7 @@ on:
       - website/**
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -33,9 +34,9 @@ jobs:
       - name: ⚙️ Setup Node.js
         uses: actions/setup-node@v6
         with:
-          cache: "yarn"
-          cache-dependency-path: "./website/yarn.lock"
-          node-version-file: "./website/.node-version"
+          cache: yarn
+          cache-dependency-path: ./website/yarn.lock
+          node-version-file: ./website/.node-version
       - name: 🧶 Yarn install
         run: yarn install --immutable
       - name: 🔨 Node.js build
