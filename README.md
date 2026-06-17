@@ -40,6 +40,9 @@ yarn upgrade-interactive
 yarn why '<package_name>'
 ## Upgrade packages using it, if update is available. Check npmjs.com.
 yarn up --recursive '<package_name>'
+
+# Yarn NPM audit example
+yarn npm audit --recursive --severity high
 ```
 
 ### Run locally
