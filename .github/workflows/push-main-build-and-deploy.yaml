@@ -3,7 +3,7 @@ name: Deploy to Cloudflare Pages and GitHub Pages
 
 run-name: ${{ github.workflow }} by @${{ github.actor }}
 
-on:
+on:  # ryl disable-line rule:truthy
   push:
     branches:
       - main

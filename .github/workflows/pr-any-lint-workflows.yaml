@@ -3,7 +3,7 @@ name: Lint GitHub workflows with zizmor
 
 run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
 
-on:
+on:  # ryl disable-line rule:truthy
   pull_request:
     paths:
       - .github/workflows/**
