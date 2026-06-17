@@ -1,0 +1,52 @@
+name: Lint YAML with ryl
+
+run-name: "${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}"
+
+on:
+  pull_request:
+    paths:
+      - "**.yml"
+      - "**/*ryl.toml"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-yaml:
+    name: Run ryl
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-slim
+    steps:
+      - name: 🛎️ GitHub checkout branch "${{ github.head_ref || github.ref_name }}"
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: 🔍 Get changed files
+        id: filter
+        uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4.0.1
+        with:
+          filters: |
+            yaml:
+              - added|modified: '**.yml'
+              - added|modified: '**.yaml'
+            rylconf:
+              - added|modified: '{.,}ryl.toml'
+              - added|modified: '.config/{.,}ryl.toml'
+          list-files: escape
+      - name: ⬇️ Install the latest version of uv
+        if: steps.filter.outputs.yaml == 'true' || steps.filter.outputs.rylconf == 'true'
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          cache-dependency-glob: ""
+          enable-cache: true
+      - name: 🔍 Lint changed YAML files with ryl
+        if: steps.filter.outputs.yaml == 'true' && steps.filter.outputs.rylconf == 'false'
+        shell: bash
+        run: uvx ryl ${{ steps.filter.outputs.markdown_files }}
+      - name: 🔍 Lint all YAML files with ryl when ".ryl.toml" is updated
+        if: steps.filter.outputs.rylconf == 'true'
+        shell: bash
+        run: uvx ryl .

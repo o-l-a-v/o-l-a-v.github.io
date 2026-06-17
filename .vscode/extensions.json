@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "EditorConfig.EditorConfig",
+    "owenlamont.ryl",
     "rvben.rumdl"
   ]
 }
