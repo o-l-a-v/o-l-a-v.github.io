@@ -55,7 +55,7 @@ indent-sequences = true
 
 [rules.line-length]
 level = "error"
-max = 80
+max = 150
 allow-non-breakable-words = true
 allow-non-breakable-inline-mappings = true
 
