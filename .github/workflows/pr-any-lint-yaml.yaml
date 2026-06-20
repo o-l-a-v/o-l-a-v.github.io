@@ -46,8 +46,8 @@ jobs:
       - name: 🔍 Lint changed YAML files with ryl
         if: steps.filter.outputs.yaml == 'true' && steps.filter.outputs.rylconf == 'false'
         shell: bash
-        run: uvx ryl ${{ steps.filter.outputs.markdown_files }}
+        run: uvx --config-file .config/uv.toml ryl ${{ steps.filter.outputs.markdown_files }}
       - name: 🔍 Lint all YAML files with ryl when ".ryl.toml" is updated
         if: steps.filter.outputs.rylconf == 'true'
         shell: bash
-        run: uvx ryl .
+        run: uvx --config-file .config/uv.toml ryl .

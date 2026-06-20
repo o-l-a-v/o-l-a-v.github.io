@@ -41,6 +41,6 @@ jobs:
       - name: 🔍 Run zizmor
         if: steps.filter.outputs.workflows == 'true'
         run: |
-          uvx zizmor --format plain --offline --min-confidence low --min-severity low \
-          --config ./.config/zizmor.yml \
-          ${{ steps.filter.outputs.workflows_files }}
+          uvx --config-file .config/uv.toml zizmor --format plain --offline \
+              --min-confidence low --min-severity low --config ./.config/zizmor.yml \
+              ${{ steps.filter.outputs.workflows_files }}
