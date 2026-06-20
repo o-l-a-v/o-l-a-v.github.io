@@ -38,9 +38,11 @@ jobs:
         with:
           cache-dependency-glob: ''
           enable-cache: true
+          # renovate: datasource=github-releases depName=astral-sh/uv
+          version: 0.11.21
       - name: 🔍 Run zizmor
         if: steps.filter.outputs.workflows == 'true'
         run: |
-          uvx zizmor --format plain --offline --min-confidence low --min-severity low \
-          --config ./.config/zizmor.yml \
-          ${{ steps.filter.outputs.workflows_files }}
+          uvx --config-file .config/uv.toml zizmor --format plain --offline \
+              --min-confidence low --min-severity low --config ./.config/zizmor.yml \
+              ${{ steps.filter.outputs.workflows_files }}
