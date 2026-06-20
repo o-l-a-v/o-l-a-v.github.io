@@ -42,6 +42,8 @@ jobs:
         with:
           cache-dependency-glob: ''
           enable-cache: true
+          # renovate: datasource=github-releases depName=astral-sh/uv
+          version: 8.2.0
       - name: 🔍 Lint changed markdown files with rumdl
         if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
         shell: bash

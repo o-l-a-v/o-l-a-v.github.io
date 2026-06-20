@@ -38,6 +38,8 @@ jobs:
         with:
           cache-dependency-glob: ''
           enable-cache: true
+          # renovate: datasource=github-releases depName=astral-sh/uv
+          version: 8.2.0
       - name: 🔍 Run zizmor
         if: steps.filter.outputs.workflows == 'true'
         run: |
