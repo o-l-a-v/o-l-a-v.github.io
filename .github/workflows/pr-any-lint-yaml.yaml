@@ -1,5 +1,6 @@
 ---
-name: Lint YAML with ryl
+# Lint YAML with ryl
+name: Lint YAML
 
 run-name: >
   ${{ github.event_name }}

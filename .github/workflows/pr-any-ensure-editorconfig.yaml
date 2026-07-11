@@ -1,5 +1,6 @@
 ---
-name: Ensure changed files follow EditorConfig settings
+# Ensure changed files follow EditorConfig settings
+name: Ensure EditorConfig
 
 run-name: >
   ${{ github.event_name }}

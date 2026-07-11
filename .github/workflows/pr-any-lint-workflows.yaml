@@ -1,5 +1,6 @@
 ---
-name: Lint GitHub workflows with zizmor
+# Lint GitHub workflows with zizmor
+name: Lint GitHub workflows
 
 run-name: >
   ${{ github.event_name }}

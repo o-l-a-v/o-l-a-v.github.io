@@ -1,5 +1,6 @@
 ---
-name: Deploy to Cloudflare Pages and GitHub Pages
+# Deploy to Cloudflare Pages and GitHub Pages
+name: Deploy
 
 run-name: >
   ${{ github.event_name }}

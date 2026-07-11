@@ -1,5 +1,6 @@
 ---
-name: Lint markdown with rumdl
+# Lint markdown with rumdl
+name: Lint markdown
 
 run-name: >
   ${{ github.event_name }}
