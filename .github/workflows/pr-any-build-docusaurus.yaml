@@ -3,7 +3,7 @@
 name: Build Docusaurus
 
 run-name: >
-  ${{ github.event_name }}
+  (${{ github.event_name == 'pull_request' && 'PR' || (github.event_name == 'push' && 'Push' || github.event_name)
   ${{ github.event.pull_request.number && format(' #{0}', github.event.pull_request.number) || '' }}
   by @${{ github.actor }} -
   ${{ github.workflow }} on ${{ github.head_ref || github.ref_name }} -
