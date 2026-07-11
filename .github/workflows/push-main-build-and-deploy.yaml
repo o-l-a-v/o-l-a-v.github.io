@@ -2,9 +2,10 @@
 name: Deploy to Cloudflare Pages and GitHub Pages
 
 run-name: >
-  ${{ github.event_name }} by @${{ github.actor }} -
+  ${{ github.event_name }}
+  ${{ github.event.pull_request.number && format(' #{0}', github.event.pull_request.number) || '' }}
+  by @${{ github.actor }} -
   ${{ github.workflow }}
-  ${{ github.event.pull_request.number && format(' [#{0}] -', github.event.pull_request.number) || '-' }}
   ${{ github.event.pull_request.title || github.event.head_commit.message || github.ref_name }}
 
 on:  # ryl disable-line rule:truthy
