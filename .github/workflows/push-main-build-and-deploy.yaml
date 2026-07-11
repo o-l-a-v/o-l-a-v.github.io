@@ -30,9 +30,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: ⚙️ Enable corepack
+        # zizmor: ignore[adhoc-packages]
         run: |
           if ! command -v corepack &>/dev/null; then
-            # zizmor: ignore[adhoc-packages]
             npm install --global corepack@0.35.0
           fi
           corepack enable
