@@ -1,7 +1,21 @@
 ---
+# Dependency Review
 name: Dependency Review
 
-run-name: '${{ github.workflow }} - [${{ github.event.pull_request.title }} #${{ github.event.pull_request.number }}] by @${{ github.actor }}'
+run-name: >
+  ${{
+    github.event_name == 'pull_request' && 'PR' ||
+    (
+      github.event_name == 'push' &&
+      (contains(github.event.head_commit.message, 'Merge') || contains(github.event.head_commit.message, '(#'))
+    ) && 'Merge' ||
+    github.event_name == 'push' && 'Direct' ||
+    github.event_name
+  }}
+  ${{ github.event.pull_request.number && format(' #{0}', github.event.pull_request.number) || '' }}
+  by @${{ github.actor }} -
+  ${{ github.workflow }} on ${{ github.head_ref || github.ref_name }} -
+  ${{ github.event.pull_request.title || github.event.head_commit.message || github.ref_name }}
 
 on:  # ryl disable-line rule:truthy
   pull_request:
