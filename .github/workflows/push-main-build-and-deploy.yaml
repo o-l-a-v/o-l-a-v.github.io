@@ -1,7 +1,10 @@
 ---
 name: Deploy to Cloudflare Pages and GitHub Pages
 
-run-name: ${{ github.workflow }} by @${{ github.actor }}
+run-name: >
+  ${{ github.workflow }}:
+  ${{ github.event.pull_request.title || github.event.head_commit.message || github.ref_name }}
+  (${{ github.event_name }}) by @${{ github.actor }}
 
 on:  # ryl disable-line rule:truthy
   push:
