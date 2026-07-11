@@ -10,10 +10,11 @@ run-name: >
       (contains(github.event.head_commit.message, 'Merge') || contains(github.event.head_commit.message, '(#'))
     ) && 'Merge' ||
     github.event_name == 'push' && 'Direct' ||
+    github.event_name == 'schedule' && 'Cron' ||
     github.event_name
   }}
   ${{ github.event.pull_request.number && format(' #{0}', github.event.pull_request.number) || '' }}
-  by @${{ github.actor }} -
+  ${{ (github.actor && github.actor != 'github-actions[bot]') && format(' by @{0}', github.actor) || '' }} -
   ${{ github.workflow }} on ${{ github.head_ref || github.ref_name }} -
   ${{ github.event.pull_request.title || github.event.head_commit.message || github.ref_name }}
 
