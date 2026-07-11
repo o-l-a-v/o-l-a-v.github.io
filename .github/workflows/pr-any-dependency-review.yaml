@@ -2,9 +2,10 @@
 name: Dependency Review
 
 run-name: >
-  ${{ github.workflow }}:
+  ${{ github.event_name }} by @${{ github.actor }} -
+  ${{ github.workflow }}
+  ${{ github.event.pull_request.number && format(' [#{0}] -', github.event.pull_request.number) || '-' }}
   ${{ github.event.pull_request.title || github.event.head_commit.message || github.ref_name }}
-  (${{ github.event_name }}) by @${{ github.actor }}
 
 on:  # ryl disable-line rule:truthy
   pull_request:
