@@ -24,8 +24,9 @@
   "packageRules": [
     {
       "automerge": true,
-      "description": "Automerge minor and patch updates for devDependencies if CI passes.",
+      "description": "Automerge minor and patch updates for dependencies and devDependencies if CI passes.",
       "matchDepTypes": [
+        "dependencies",
         "devDependencies"
       ],
       "matchUpdateTypes": [
