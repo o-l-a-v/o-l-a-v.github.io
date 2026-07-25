@@ -83,7 +83,8 @@
       "matchPackageNames": [
         "node",
         "yarn"
-      ]
+      ],
+      "rangeStrategy": "replace"
     },
     {
       "description": "Group common linting/formatting tools.",
