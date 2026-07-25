@@ -69,7 +69,7 @@
     },
     {
       "automerge": false,
-      "description": "Group Node.js runtime updates (.node-version, engines, and packageManager)",
+      "description": "Preserve ranges for Node.js runtime and engines instead of pinning",
       "groupName": "node and yarn runtime",
       "matchDepTypes": [
         "engines",
@@ -78,13 +78,10 @@
       ],
       "matchManagers": [
         "nvm",
-        "npm"
+        "npm",
+        "nodenv"
       ],
-      "matchPackageNames": [
-        "node",
-        "yarn"
-      ],
-      "rangeStrategy": "replace"
+      "rangeStrategy": "auto"
     },
     {
       "description": "Group common linting/formatting tools.",
