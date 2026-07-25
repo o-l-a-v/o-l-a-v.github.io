@@ -68,8 +68,16 @@
       ]
     },
     {
+      "description": "Force .node-version to only use major Node version numbers (e.g. 24)",
+      "matchManagers": [
+        "nvm",
+        "nodenv"
+      ],
+      "replacementVersionTemplate": "{{newMajor}}"
+    },
+    {
       "automerge": false,
-      "description": "Preserve ranges for Node.js runtime and engines instead of pinning",
+      "description": "Preserve ranges for package.json engines and packageManager instead of pinning",
       "groupName": "node and yarn runtime",
       "matchDepTypes": [
         "engines",
@@ -77,9 +85,7 @@
         "required-node"
       ],
       "matchManagers": [
-        "nvm",
-        "npm",
-        "nodenv"
+        "npm"
       ],
       "rangeStrategy": "auto"
     },
