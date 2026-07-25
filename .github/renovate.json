@@ -68,12 +68,12 @@
       ]
     },
     {
-      "description": "Force .node-version to only use major Node version numbers (e.g. 24)",
+      "description": "Preserve major-only format for .node-version instead of full pin",
       "matchManagers": [
         "nvm",
         "nodenv"
       ],
-      "replacementVersionTemplate": "{{newMajor}}"
+      "rangeStrategy": "replace"
     },
     {
       "automerge": false,
