@@ -9,6 +9,7 @@
   "labels": [
     "dependencies"
   ],
+  "pinDigests": true,
   "postUpdateOptions": [
     "yarnDedupeHighest"
   ],
@@ -86,6 +87,14 @@
       ],
       "matchManagers": [
         "npm"
+      ],
+      "rangeStrategy": "auto"
+    },
+    {
+      "description": "Preserve ranges in package.json resolutions and overrides",
+      "matchDepTypes": [
+        "resolutions",
+        "overrides"
       ],
       "rangeStrategy": "auto"
     },
