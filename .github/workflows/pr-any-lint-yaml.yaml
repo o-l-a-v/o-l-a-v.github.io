@@ -59,7 +59,7 @@ jobs:
           cache-dependency-glob: ''
           enable-cache: true
           # renovate: datasource=github-releases depName=astral-sh/uv
-          version: 0.12.0
+          version: 0.12.1
       - name: 🔍 Lint changed YAML files with ryl
         if: steps.filter.outputs.yaml == 'true' && steps.filter.outputs.rylconf == 'false'
         shell: bash
