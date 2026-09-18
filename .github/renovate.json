@@ -14,18 +14,7 @@
     "yarnDedupeHighest"
   ],
   "rangeStrategy": "pin",
-  "customManagers": [
-    {
-      "customType": "regex",
-      "description": "Update versions in YAML based on renovate comments",
-      "managerFilePatterns": [
-        "/^\\.github/workflows/.*\\.ya?ml$/"
-      ],
-      "matchStrings": [
-        "#\\s*renovate:\\s*datasource=(?<datasource>[a-z-]+)\\s*depName=(?<depName>\\S+)\\s*\\n\\s*[a-zA-Z0-9_-]+:\\s*[\"']?(?<currentValue>[\\w\\.-]+)[\"']?"
-      ]
-    }
-  ],
+  "customManagers": [],
   "packageRules": [
     {
       "automerge": true,
