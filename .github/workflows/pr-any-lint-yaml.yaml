@@ -58,7 +58,7 @@ jobs:
         with:
           cache-dependency-glob: ''
           enable-cache: true
-          version: 0.12.15
+          version: 0.12.16
       - name: 🔍 Lint changed YAML files with ryl
         if: steps.filter.outputs.yaml == 'true' && steps.filter.outputs.rylconf == 'false'
         shell: bash
