@@ -53,7 +53,7 @@ jobs:
         with:
           cache-dependency-glob: ''
           enable-cache: true
-          version: 0.12.15
+          version: 0.12.16
       - name: 🔍 Run zizmor
         if: steps.filter.outputs.workflows == 'true'
         run: |
