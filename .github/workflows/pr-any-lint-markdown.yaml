@@ -57,7 +57,7 @@ jobs:
         with:
           cache-dependency-glob: ''
           enable-cache: true
-          version: 0.12.16
+          version: 0.12.17
       - name: 🔍 Lint changed markdown files with rumdl
         if: steps.filter.outputs.markdown == 'true' && steps.filter.outputs.rumdlconf == 'false'
         shell: bash
