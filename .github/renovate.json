@@ -19,10 +19,10 @@
       "customType": "regex",
       "description": "Extract and update global corepack installation in GitHub Actions workflows",
       "managerFilePatterns": [
-        "/^\\.github/workflows/[^/]+\\.yml$/"
+        "^\\.github/workflows/[^/]+\\.yml$"
       ],
       "matchStrings": [
-        "npm install --global corepack@(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+        "npm\\s+install\\s+(?:--global|-g)\\s+corepack@(?<currentValue>\\d+\\.\\d+\\.\\d+)"
       ],
       "depNameTemplate": "corepack",
       "datasourceTemplate": "npm"
