@@ -48,7 +48,7 @@ jobs:
         # zizmor: ignore[adhoc-packages]
         run: |
           if ! command -v corepack &>/dev/null; then
-            npm install --global corepack@0.35.0
+            npm install --global corepack@0.36.0
           fi
           corepack enable
       - name: ⚙️ Setup Node.js
