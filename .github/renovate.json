@@ -29,7 +29,7 @@
   "packageRules": [
     {
       "automerge": true,
-      "description": "Automerge minor and patch updates for custom regex managers (GitHub Releases).",
+      "description": "Automerge minor and patch updates for GitHub releases",
       "matchDatasources": [
         "github-releases"
       ],
@@ -40,7 +40,7 @@
     },
     {
       "automerge": true,
-      "description": "Automerge minor and patch updates for dependencies and devDependencies if CI passes.",
+      "description": "Automerge minor and patch updates for dependencies and devDependencies",
       "matchDepTypes": [
         "dependencies",
         "devDependencies"
@@ -55,6 +55,17 @@
       "description": "Automerge minor and patch updates for GitHub Actions.",
       "matchManagers": [
         "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "automerge": true,
+      "description": "Automerge minor and patch updates for npm packages",
+      "matchDatasources": [
+        "npm"
       ],
       "matchUpdateTypes": [
         "minor",
