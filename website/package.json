@@ -29,7 +29,7 @@
     "typescript": "7.0.2"
   },
   "engines": {
-    "node": ">=22 <25",
+    "node": ">=22 <27",
     "npm": "use-yarn",
     "pnpm": "use-yarn",
     "yarn": ">=4 <5"
