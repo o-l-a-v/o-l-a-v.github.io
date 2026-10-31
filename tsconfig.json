@@ -3,6 +3,12 @@
   // * If VSCode shows errors, run `yarn install` and reload VSCode afterwards
   "extends": "@docusaurus/tsconfig",
   "compilerOptions": {
-    "baseUrl": "."
+    "jsx": "react-jsx",
+    "ignoreDeprecations": "6.0",
+    "paths": {
+      "*": [
+        "./node_modules/@docusaurus/tsconfig/*"
+      ]
+    }
   }
 }
