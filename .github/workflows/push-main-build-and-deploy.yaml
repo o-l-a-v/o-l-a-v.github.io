@@ -22,8 +22,12 @@ on:  # ryl disable-line rule:truthy
   push:
     branches:
       - main
-    paths:
-      - website/**
+    paths-ingore:
+      - .editorconfig
+      - .gitignore
+      - .vscode/**
+      - *.md
+      - LICENSE
 
 concurrency:
   group: pages
@@ -32,9 +36,6 @@ concurrency:
 jobs:
   build:
     name: Build Docusaurus
-    defaults:
-      run:
-        working-directory: ./website
     permissions:
       contents: read
     runs-on: ubuntu-latest
@@ -55,8 +56,8 @@ jobs:
         uses: actions/setup-node@v7.1.0
         with:
           cache: yarn
-          cache-dependency-path: ./website/yarn.lock
-          node-version-file: ./website/.node-version
+          cache-dependency-path: ./yarn.lock
+          node-version-file: ./.node-version
       - name: 🧶 Yarn install
         run: yarn install --immutable
       - name: 🔨 Node.js build
@@ -67,13 +68,13 @@ jobs:
         with:
           if-no-files-found: error
           name: build-artifact
-          path: website/build/
+          path: build/
       - name: ⬆️ Upload build artifact specific for GitHub Pages
         uses: actions/upload-pages-artifact@v5.0.0
         id: artifact-ghp
         with:
           name: build-artifact-ghp
-          path: website/build/
+          path: build/
   deploy-cloudflare:
     name: Deploy to Cloudflare Pages
     environment: deploy

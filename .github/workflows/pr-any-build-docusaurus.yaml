@@ -19,9 +19,15 @@ run-name: >
   ${{ github.event.pull_request.title || github.event.head_commit.message || github.ref_name }}
 
 on:  # ryl disable-line rule:truthy
-  pull_request:
-    paths:
-      - website/**
+  push:
+    branches:
+      - main
+    paths-ingore:
+      - .editorconfig
+      - .gitignore
+      - .vscode/**
+      - *.md
+      - LICENSE
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -30,9 +36,6 @@ concurrency:
 jobs:
   build_docusaurus:
     name: Build Docusaurus
-    defaults:
-      run:
-        working-directory: ./website
     permissions:
       contents: read
     runs-on: ubuntu-latest
@@ -52,8 +55,8 @@ jobs:
         uses: actions/setup-node@v7.1.0
         with:
           cache: yarn
-          cache-dependency-path: ./website/yarn.lock
-          node-version-file: ./website/.node-version
+          cache-dependency-path: ./yarn.lock
+          node-version-file: ./.node-version
       - name: 🧶 Yarn install
         run: yarn install --immutable
       - name: 🔨 Node.js build
