@@ -53,10 +53,6 @@ fnm must then be added to the PowerShell profile:
 ### Develop
 
 ```bash
-# Navigate to the website folder
-# * This should make fnm install latest Node.js matching project requirements
-cd website
-
 # Install Corepack with npm if Node.js >= v25
 # * This will only be "global" to the fnm managed Node.js version
 # * This works because fnm sets npm config prefix, which tells npm where to install packages
