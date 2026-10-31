@@ -1,6 +1,7 @@
 # rumdl configuration
 # Schema: https://raw.githubusercontent.com/rvben/rumdl/main/rumdl.schema.json
 
+# Global settings
 [global]
 disable = ["MD013", "MD025", "MD041"]
 
