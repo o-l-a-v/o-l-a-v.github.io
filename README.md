@@ -121,6 +121,23 @@ yarn up --recursive '<package_name>'
 yarn npm audit --recursive --severity high
 ```
 
+Find and fix files with wrong line ending:
+
+```powershell
+# Find
+git ls-files --eol | grep "w/crlf"
+
+# Fix .md files
+Get-ChildItem -Recurse -File -Filter '*.md' | ForEach-Object {
+    $content = Get-Content -Raw $_.FullName
+    if ($content -match "\r\n") {
+        $newContent = $content -replace "\r\n", "`n"
+        [System.IO.File]::WriteAllText($_.FullName, $newContent)
+        Write-Host "Converted: $($_.FullName)"
+    }
+}
+```
+
 ### Run locally
 
 See edits to pages live.
