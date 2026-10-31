@@ -61,6 +61,7 @@ allow-non-breakable-inline-mappings = true
 
 [lint.rules.quoted-strings]
 allow-double-quotes-for-escaping = true
+allow-quoted-quotes = true
 check-keys = true
 quote-type = "single"
 required = "only-when-needed"
