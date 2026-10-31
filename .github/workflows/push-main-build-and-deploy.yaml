@@ -22,8 +22,12 @@ on:  # ryl disable-line rule:truthy
   push:
     branches:
       - main
-    paths:
-      - website/**
+    paths-ingore:
+      - .editorconfig
+      - .gitignore
+      - .vscode/**
+      - *.md
+      - LICENSE
 
 concurrency:
   group: pages
@@ -64,13 +68,13 @@ jobs:
         with:
           if-no-files-found: error
           name: build-artifact
-          path: website/build/
+          path: build/
       - name: ⬆️ Upload build artifact specific for GitHub Pages
         uses: actions/upload-pages-artifact@v5.0.0
         id: artifact-ghp
         with:
           name: build-artifact-ghp
-          path: website/build/
+          path: build/
   deploy-cloudflare:
     name: Deploy to Cloudflare Pages
     environment: deploy
