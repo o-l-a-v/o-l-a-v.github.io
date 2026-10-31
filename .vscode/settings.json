@@ -5,6 +5,9 @@
   "[powershell]": {
     "editor.tabSize": 4
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "[yaml]": {
     "editor.defaultFormatter": "owenlamont.ryl"
   },
