@@ -26,7 +26,7 @@ on:  # ryl disable-line rule:truthy
       - .editorconfig
       - .gitignore
       - .vscode/**
-      - *.md
+      - '*.md'
       - LICENSE
 
 concurrency:
