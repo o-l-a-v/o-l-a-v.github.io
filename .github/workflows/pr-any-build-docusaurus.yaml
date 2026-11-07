@@ -57,5 +57,7 @@ jobs:
           node-version-file: ./.node-version
       - name: 🧶 Yarn install
         run: yarn install --immutable
+      - name: 🔎 TypeScript type check
+        run: node --run typecheck
       - name: 🔨 Node.js build
         run: node --run build
